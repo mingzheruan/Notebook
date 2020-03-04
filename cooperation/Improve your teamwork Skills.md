@@ -59,3 +59,15 @@
 + Conduct 
   + limit profanity and offensive language
   + Dress appropriately
+
+## 8.Ideal teammates think strategically 
+
++ Balance your work and working relationships
+  + maintain a healthy relationship 
++ Learn from mistakes
++ Demonstrate flexibility
+
+## 9.Strategically self-aware
+
++ SWOT analysis 
++ create an plan to address your personal opportunity for improvement
