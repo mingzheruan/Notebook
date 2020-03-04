@@ -50,7 +50,7 @@
   + Be cooperative
   + Support team decisions
 
-
+ 
 
 ## 7.Effective teammates behave professionally
 
