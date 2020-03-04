@@ -49,3 +49,13 @@
   + Encourage participation
   + Be cooperative
   + Support team decisions
+
+
+
+## 7.Effective teammates behave professionally
+
++ Competence
++ Completion of work
++ Conduct 
+  + limit profanity and offensive language
+  + Dress appropriately
