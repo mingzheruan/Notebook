@@ -14,7 +14,7 @@ it is okay to cast lower precision type to higher precision type implicitly.
 
 not from high precision type to lower precision type. Java will always help you to perform casting to higher precision if needed
 
-<font color="red"> if you are not sure, always use explicit conversion</font>
+<span style="color:red" > if you are not sure, always use explicit conversion</span>
 
 #### Operators and Precedence
 
