@@ -15,7 +15,7 @@ it is okay to cast lower precision type to higher precision type implicitly.
 not from high precision type to lower precision type. Java will always help you to perform casting to higher precision if needed
 
 ```diff
-- if you are not sure, always use explicit conversion
+ if you are not sure, always use explicit conversion
 ```
 
 
