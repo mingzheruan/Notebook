@@ -92,4 +92,7 @@ firstStudent = new student
 
 
 
-![alt 1]()
+![alt Elementary Class01](/Users/ruanmingzhe/Documents/GitHub/Notebook/Algorithm -- laioffer/Image/Elementary Class01.png)
+
+
+
