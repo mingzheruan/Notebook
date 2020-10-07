@@ -24,12 +24,14 @@ not from high precision type to lower precision type. Java will always help you 
 
 + bitwise AND ---- & 
 
-+ bitwise inclusive ---- |	     		
++ bitwise inclusive ---- |	     
+
+   <br>		
 
   Example: 
 
   if( foo() & goo() ) ---- two function both run.
-
+  
   if( foo() | goo() ) ---- two function both run.
 
  <br>
@@ -38,10 +40,12 @@ not from high precision type to lower precision type. Java will always help you 
 
 + logical OR ---- ||
 
+   <br>
+
   Example:
 
   if( foo() && goo() ) ---- if foo() is false, the judgement is over. no run goo()
-
+  
   if( foo() || goo() ) ---- if foo() is true, the judgement is over. no run goo()
 
  <br>
@@ -176,7 +180,7 @@ Instance variables' vasibility is defined by their access modifiers.
 
  </br>
 
-![alt 2](/Users/ruanmingzhe/Documents/GitHub/Notebook/Algorithm -- laioffer/Image/Elementary Class02.png)
+![image](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class02.png)
 
  </br>
 
