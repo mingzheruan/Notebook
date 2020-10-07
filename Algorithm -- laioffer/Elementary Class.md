@@ -18,7 +18,7 @@ not from high precision type to lower precision type. Java will always help you 
  if you are not sure, always use explicit conversion!!!
 ```
 
-  
+  </br>
 
 #### Operators and Precedence
 
