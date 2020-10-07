@@ -58,7 +58,7 @@ not from high precision type to lower precision type. Java will always help you 
 
 
 
-+ Declaration: associate a variable name with an object type
++ **Declaration**: associate a variable name with an object type
 
 ```java
 Student firstStudent
@@ -66,7 +66,7 @@ Student firstStudent
 
 
 
-+ Instantiation: the new keyword is a java operator that creates the object
++ **Instantiation**: the new keyword is a java operator that creates the object
 
 ```\java
 firstStudent = new student
@@ -76,7 +76,7 @@ firstStudent = new student
 
 
 
-+ Initialization: the new operator is followed by a call to a constructor, which initializes the new object
++ **Initialization**: the new operator is followed by a call to a constructor, which initializes the new object
 
 
 
@@ -84,11 +84,11 @@ firstStudent = new student
 
 #### Memory spaces in a java program: Stack and Heap
 
-+ Stack: In computer science, a call stack is a stack data structure that stores information about the active subroutines of a computer program(stack frame). This kind of stack is also known as an execution stack, program stack, ccontrol stack, run-time stack, or machine stack, and is often shortened to just "the stack" 
++ **Stack**: In computer science, a call stack is a stack data structure that stores information about the active subroutines of a computer program(stack frame). This kind of stack is also known as an execution stack, program stack, ccontrol stack, run-time stack, or machine stack, and is often shortened to just "the stack" 
 
 
 
-+ Heap: Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application runs.(The heap is not same a heap(tree). )
++ **Heap**: Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application runs.(The heap is not same a heap(tree). )
 
 
 
@@ -115,7 +115,7 @@ firstStudent = new student
 
 #### Java Data Type
 
-1. Primitive types: data directly stored in memory(no reference)
+1. Primitive types: data directly stored in **memory**(no reference)
    1. Numeric
       1. Integer
          + byte short int long
@@ -137,6 +137,29 @@ firstStudent = new student
 
 
 
+
+
+
+
 ### Variable Scope
 
-1. Scope: **lifetime and accessibility/visibility** of a variable
+1. Scope: **lifetime and accessibility/visibility** of a variable. ~ How large the scope depends on where a variable is declared.
+2. Simply, the scope is the **innermost{}** wrapping up the **declaration**.
+3. Local (local to function) variables: the variables whose lifetime is strictly tied with a function. 
+
+
+
+### Stack and Heap Comparison
+
++ **Local type cariables are always on stack.**
+
++ **Whenever an object is created, its content(i.e, instance variable) is always stored in the Heap space.**
+
++ Stack variable is destroyed after out of its scope.
+
++ Heap variable is destroyed by **garbage collector(GC)**
+
+  
+
+ ### ArrayList
+
