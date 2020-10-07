@@ -58,5 +58,35 @@ not from high precision type to lower precision type. Java will always help you 
 
 
 
++ Declaration: associate a variable name with an object type
 
+```java
+Student firstStudent
+```
+
+
+
++ Instantiation: the new keyword is a java operator that creates the object
+
+```\java
+firstStudent = new student
+
+//create an object in the memory and return its refernece to firstStudent
+```
+
+
+
++ Initialization: the new operator is followed by a call to a constructor, which initializes the new object
+
+
+
+### Object Memory Layout
+
+#### Memory spaces in a java program: Stack and Heap
+
++ Stack: In computer science, a call stack is a stack data structure that stores information about the active subroutines of a computer program(stack frame). This kind of stack is also known as an execution stack, program stack, ccontrol stack, run-time stack, or machine stack, and is often shortened to just "the stack" 
+
+
+
++ Heap: Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application runs.
 
