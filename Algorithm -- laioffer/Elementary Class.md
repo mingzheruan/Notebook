@@ -8,7 +8,7 @@ byte -> short -> int -> long -> float -> double
 
 ------------------------------------------------------------>
 
-&nbsp;		&nbsp;&nbsp;&nbsp;							Widening (精度)
+&nbsp;		&nbsp;&nbsp;&nbsp;		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;					Widening (精度)
 
 it is okay to cast lower precision type to higher precision type implicitly. 
 
