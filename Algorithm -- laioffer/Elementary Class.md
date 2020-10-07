@@ -90,3 +90,6 @@ firstStudent = new student
 
 + Heap: Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application runs.
 
+
+
+![alt 1]()
