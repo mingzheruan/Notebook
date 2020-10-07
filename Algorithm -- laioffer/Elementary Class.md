@@ -209,4 +209,11 @@ similar to instance variables, just belong to class but not an instance
 #### Errors:
 
 + **NullPointerException:** happens when we try to dereference a reference with null value
-+ 
++ **ArrayIndexOutOfBoundException:** if the index specified is not in the valid range of the array.
+
+
+
+### ArrayList
+
++ ArrayList is regard as a **resizable** array
+
