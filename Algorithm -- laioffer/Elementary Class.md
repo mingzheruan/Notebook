@@ -149,6 +149,28 @@ firstStudent = new student
 
 
 
+ ### Variables and their scopes
+
+#### Local variables
+
++ Local variables must be initizlized before use.
+
++ One local variable has the lifetime of their own scope.
+
+
+
+#### Instance variable(field)
+
+instance field == instance variable == member variable
+
+**Non-static** variables defined **within a class**, but not within any methods.
+
+Instance variables have the same life cycle as the instance.
+
+Instance variables' vasibility is defined by their access modifiers.
+
+
+
 ### Stack and Heap Comparison
 
 + **Local type cariables are always on stack.**
@@ -160,6 +182,4 @@ firstStudent = new student
 + Heap variable is destroyed by **garbage collector(GC)**
 
   
-
- ### ArrayList
 
