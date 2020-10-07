@@ -18,7 +18,7 @@ not from high precision type to lower precision type. Java will always help you 
  if you are not sure, always use explicit conversion!!!
 ```
 
-
+  
 
 #### Operators and Precedence
 
@@ -94,7 +94,7 @@ firstStudent = new student
 
 ![image](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class01.png)
 
-
+  
 
 ### Review: Class / Object / Reference / Dereference
 
