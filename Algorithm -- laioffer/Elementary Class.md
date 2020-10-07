@@ -32,7 +32,7 @@ not from high precision type to lower precision type. Java will always help you 
 
   if( foo() | goo() ) ---- two function both run.
 
-
+ </br>
 
 + logical AND ---- &&
 
@@ -44,7 +44,7 @@ not from high precision type to lower precision type. Java will always help you 
 
   if( foo() || goo() ) ---- if foo() is true, the judgement is over. no run goo()
 
-
+ </br>
 
 ### Array, Class and Objects
 
@@ -56,7 +56,7 @@ not from high precision type to lower precision type. Java will always help you 
   The length cannot be changed after creation
   ```
 
-
+ </br>
 
 + **Declaration**: associate a variable name with an object type
 
@@ -64,7 +64,7 @@ not from high precision type to lower precision type. Java will always help you 
 Student firstStudent
 ```
 
-
+ </br>
 
 + **Instantiation**: the new keyword is a java operator that creates the object
 
@@ -74,11 +74,11 @@ firstStudent = new student
 //create an object in the memory and return its refernece to firstStudent
 ```
 
-
+ </br>
 
 + **Initialization**: the new operator is followed by a call to a constructor, which initializes the new object
 
-
+ </br>
 
 ### Object Memory Layout
 
@@ -86,15 +86,15 @@ firstStudent = new student
 
 + **Stack**: In computer science, a call stack is a stack data structure that stores information about the active subroutines of a computer program(stack frame). This kind of stack is also known as an execution stack, program stack, ccontrol stack, run-time stack, or machine stack, and is often shortened to just "the stack" 
 
-
+ </br>
 
 + **Heap**: Java objects reside in an area called the heap. The heap is created when the JVM starts up and may increase or decrease in size while the application runs.(The heap is not same a heap(tree). )
 
-
+ </br>
 
 ![image](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class01.png)
 
-  
+   </br>
 
 ### Review: Class / Object / Reference / Dereference
 
@@ -111,7 +111,7 @@ firstStudent = new student
    1. 1 function invocation -> 1 stack frame "pushed" onto the call stack (a pile of books)
    2. if a function is never called, its stack frame is never created.
 
-
+ </br>
 
 #### Java Data Type
 
@@ -130,14 +130,14 @@ firstStudent = new student
    2. Interface
    3. Enum
 
-
+ </br>
 
 + Serves as object states (fields) - heap
 + Serves as temporary variables in our methods (local variables) - stack
 
 
 
-
+ </br>
 
 
 
@@ -147,7 +147,7 @@ firstStudent = new student
 2. Simply, the scope is the **innermost{}** wrapping up the **declaration**.
 3. Local (local to function) variables: the variables whose lifetime is strictly tied with a function. 
 
-
+ </br>
 
  ### Variables and their scopes
 
@@ -157,7 +157,7 @@ firstStudent = new student
 
 + One local variable has the lifetime of their own scope.
 
-
+ </br>
 
 #### Instance variable(field)
 
@@ -169,24 +169,24 @@ Instance variables have the same life cycle as the instance.
 
 Instance variables' vasibility is defined by their access modifiers.
 
-
+ </br>
 
 ![alt 2](/Users/ruanmingzhe/Documents/GitHub/Notebook/Algorithm -- laioffer/Image/Elementary Class02.png)
 
-
+ </br>
 
 ##### Class variables (static)
 
 similar to instance variables, just belong to class but not an instance
 
-
+ </br>
 
 #### Static 
 
 + static method can(directly) access only static variables/method
 + Non-static method can access both static and non-static variables/methods
 
-
+ </br>
 
 ### Stack and Heap Comparison
 
@@ -195,7 +195,7 @@ similar to instance variables, just belong to class but not an instance
 + Stack variable is destroyed after out of its scope.
 + Heap variable is destroyed by **garbage collector(GC)**
 
-
+ </br>
 
 #### Errors:
 
