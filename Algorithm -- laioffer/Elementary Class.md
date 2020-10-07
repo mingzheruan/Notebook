@@ -8,7 +8,7 @@ byte -> short -> int -> long -> float -> double
 
 ------------------------------------------------------------>
 
-​									Widening (精度)
+&nbsp;		&nbsp;&nbsp;&nbsp;							Widening (精度)
 
 it is okay to cast lower precision type to higher precision type implicitly. 
 
@@ -18,7 +18,7 @@ not from high precision type to lower precision type. Java will always help you 
  if you are not sure, always use explicit conversion!!!
 ```
 
-  </br>
+  <br>
 
 #### Operators and Precedence
 
@@ -32,7 +32,7 @@ not from high precision type to lower precision type. Java will always help you 
 
   if( foo() | goo() ) ---- two function both run.
 
- </br>
+ <br>
 
 + logical AND ---- &&
 
@@ -44,17 +44,16 @@ not from high precision type to lower precision type. Java will always help you 
 
   if( foo() || goo() ) ---- if foo() is true, the judgement is over. no run goo()
 
- </br>
+ <br>
 
 ### Array, Class and Objects
 
 + You must specify the length of the array.
-
 + List, ArrayList, LinkedList are different to arrays!
 
-  ```  
-  The length cannot be changed after creation
-  ```
+```
+The length cannot be changed after creation
+```
 
  </br>
 
@@ -122,9 +121,13 @@ firstStudent = new student
       2. Decimal
          + float, double
    2. Character
+      
       + char
    3. Boolean
+      
       + boolean
+      
+       </br>
 2. Reference types: objects stored in heap(operated by references)
    1. class
    2. Interface
@@ -162,6 +165,8 @@ firstStudent = new student
 #### Instance variable(field)
 
 instance field == instance variable == member variable
+
+ </br>
 
 **Non-static** variables defined **within a class**, but not within any methods.
 
