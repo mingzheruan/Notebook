@@ -92,7 +92,7 @@ firstStudent = new student
 
 
 
-<img src="/Users/ruanmingzhe/Documents/GitHub/Notebook/Algorithm -- laioffer/Image/Elementary Class01.png">
+![image](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class01.png)
 
 
 
