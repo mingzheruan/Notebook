@@ -15,7 +15,7 @@ it is okay to cast lower precision type to higher precision type implicitly.
 not from high precision type to lower precision type. Java will always help you to perform casting to higher precision if needed
 
 ```diff
- if you are not sure, always use explicit conversion
+ if you are not sure, always use explicit conversion!!!
 ```
 
 
@@ -43,6 +43,20 @@ not from high precision type to lower precision type. Java will always help you 
   if( foo() && goo() ) ---- if foo() is false, the judgement is over. no run goo()
 
   if( foo() || goo() ) ---- if foo() is true, the judgement is over. no run goo()
+
+
+
+### Array, Class and Objects
+
++ You must specify the length of the array.
+
++ List, ArrayList, LinkedList are different to arrays!
+
+  ```  
+  The length cannot be changed after creation
+  ```
+
+
 
 
 
