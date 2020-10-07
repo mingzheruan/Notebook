@@ -96,3 +96,47 @@ firstStudent = new student
 
 
 
+### Review: Class / Object / Reference / Dereference
+
+#### Stack + Heap
+
+1. Stack + Heap are memory (RAM) segments.
+
+2. RAM: Random Access Memory.
+
+3. Difference
+   1. Space: stack ~ MB, heap ~ GB
+   2. Read/Write speed: stack(1 CPU instruction) >>> heap("bookkeeping")
+4. Stack frame
+   1. 1 function invocation -> 1 stack frame "pushed" onto the call stack (a pile of books)
+   2. if a function is never called, its stack frame is never created.
+
+
+
+#### Java Data Type
+
+1. Primitive types: data directly stored in memory(no reference)
+   1. Numeric
+      1. Integer
+         + byte short int long
+      2. Decimal
+         + float, double
+   2. Character
+      + char
+   3. Boolean
+      + boolean
+2. Reference types: objects stored in heap(operated by references)
+   1. class
+   2. Interface
+   3. Enum
+
+
+
++ Serves as object states (fields) - heap
++ Serves as temporary variables in our methods (local variables) - stack
+
+
+
+### Variable Scope
+
+1. Scope: **lifetime and accessibility/visibility** of a variable
