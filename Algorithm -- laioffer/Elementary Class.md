@@ -171,15 +171,33 @@ Instance variables' vasibility is defined by their access modifiers.
 
 
 
+![alt 2](/Users/ruanmingzhe/Documents/GitHub/Notebook/Algorithm -- laioffer/Image/Elementary Class02.png)
+
+
+
+##### Class variables (static)
+
+similar to instance variables, just belong to class but not an instance
+
+
+
+#### Static 
+
++ static method can(directly) access only static variables/method
++ Non-static method can access both static and non-static variables/methods
+
+
+
 ### Stack and Heap Comparison
 
 + **Local type cariables are always on stack.**
-
 + **Whenever an object is created, its content(i.e, instance variable) is always stored in the Heap space.**
-
 + Stack variable is destroyed after out of its scope.
-
 + Heap variable is destroyed by **garbage collector(GC)**
 
-  
 
+
+#### Errors:
+
++ **NullPointerException:** happens when we try to dereference a reference with null value
++ 
