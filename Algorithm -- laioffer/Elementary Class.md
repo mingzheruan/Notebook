@@ -353,13 +353,13 @@ Example 2: Power
    1. Help you understand how actually the program runs
    2. Perform correctly the complexity analysis
 
-
+<br>
 
 +  **# of branches = # of usage of subproblems = # of recursive calls**
 
-![image](/Users/ruanmingzhe/Documents/GitHub/Notebook/Algorithm -- laioffer/Image/Elementary Class03.png)
+![image](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class03.png)
 
-
+<br>
 
 #### Queue and Stack
 
