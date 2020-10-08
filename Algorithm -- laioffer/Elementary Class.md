@@ -277,3 +277,39 @@ f(n)
 
 <br>
 
+**Height of the tree is n,      2^0 + 2^1 + 2^2 + ... + 2^(n - 1) = 2^n**
+
+Reason:
+
++  each nodes represents a single function call
++ each function call's time complexity is O(1)
+
+<br>
+
+Total nodes in the recursion tree = 2^n
+
+And the time complexity in each node is O(1)
+
+Thus, total time complexity = O(2^n)
+
+<br>
+
+Space = O(n)  (call stack)
+
+<br>
+
+**Each node/edge in the recursion tree represents a recursive function call.**
+
+**-Going down:** make a new recursive call, breaking point at previous level
+
+**-Going up:** all the branches are finished (all the subtree finished), return to the previous level.
+
+
+
+<br>
+
+<br>
+
+```java
+Example 2: Power
+```
