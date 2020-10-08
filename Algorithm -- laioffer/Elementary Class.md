@@ -357,25 +357,9 @@ Example 2: Power
 
 +  **# of branches = # of usage of subproblems = # of recursive calls**
 
+Example:
 
 
-​       				          f(a, b)                  				  O(1)             
-
-​        				           /    \             
-
-   				    f(a, b/2)    f(a, b/2)         				O(2)       
-
-​						  /     \   		 /    \   
-
-​		      f(a, b/4)  f(a, b/4) f(a, b/4) f(a, b/4)   	 O(4)   
-
-​			      /   \ 		  /  \  		 /  \ 		 /    \     
-
-​						   ...	         ...	         ...   
-
-​    					   /  \     ...    / \    ...    / \  
-
-​	   f(a, 1) f(a, 1) ... f(a, 1) f(a, 1) ... f(a, 1) f(a, 1) 
 
 #### Queue and Stack
 
