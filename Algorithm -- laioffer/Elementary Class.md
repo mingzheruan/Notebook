@@ -248,7 +248,7 @@ Example 1: Fibonacci sequence:
 f(n)
   0  1  2  3  4  5  6  7  8
   0  1  1  2  3  4  8  13  21...
-  												a b
+  a b
   
   
   f(n)
