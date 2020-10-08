@@ -357,7 +357,7 @@ Example 2: Power
 
 +  **# of branches = # of usage of subproblems = # of recursive calls**
 
-Example:
+
 
 
 
