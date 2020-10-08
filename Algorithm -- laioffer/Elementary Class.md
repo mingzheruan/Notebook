@@ -245,7 +245,7 @@ similar to instance variables, just belong to class but not an instance
 ```java
 Example 1: Fibonacci sequence:
 
-f(n)
+  f(n)
   0  1  2  3  4  5  6  7  8
   0  1  1  2  3  4  8  13  21...
                           a b
@@ -282,7 +282,7 @@ f(n)
 Reason:
 
 +  each nodes represents a single function call
-+ each function call's time complexity is O(1)
++  each function call's time complexity is O(1)
 
 <br>
 
@@ -312,6 +312,76 @@ Space = O(n)  (call stack)
 
 ```java
 Example 2: Power
+  a ^ b (a > 0, b >= 0)
+  2 ^ 3 = 8
+  4 ^ 2 = 16
   
-  
+  problem: f(a, b)
+    
+  Method 1
+  f(a, b)
+    - subproblem: f(a, b - 1),
+		- recursion rule: f(a, b) = a * f(a, b - 1)
+    - base case: f(a, 0) = 1
+      
+  Method 2
+  f(a, b)
+    - subproblem: f(a, b / 2),
+    - recursion rule: 
+				- b is even: f(a, b) = f(a, b / 2) ^ 2
+        - b is odd: f(a, b) = f(a, b / 2) ^ 2 * a
+    - base case: f(a, 0) = 1
+      
+  Method 3
+  f(a, b)
+    - subproblem: f(a, b / 3)
+    - recursion rule:
+				- 3 conditions
+    - base case: f(a, 0) = 1
+       
 ```
+
+<br>
+
+**Note some key points:**
+
+1. Each function call is **individual**, if you write a statement of a function call, it will follow and execute all the statements defined in the function until finish them all.
+2. The program will only run as what you told them to do
+   1. If there is a function call, it will follow the procedure until it finishes all the statement.
+   2. **It won't by default cache any result of previous computation unless you do it explicitly.**
+3. The benefit of **recursion tree**
+   1. Help you understand how actually the program runs
+   2. Perform correctly the complexity analysis
+
+
+
++  **# of branches = # of usage of subproblems = # of recursive calls**
+
+
+
+​       				          f(a, b)                  				  O(1)             
+
+​        				           /    \             
+
+   				    f(a, b/2)    f(a, b/2)         				O(2)       
+
+​						  /     \   		 /    \   
+
+​		      f(a, b/4)  f(a, b/4) f(a, b/4) f(a, b/4)   	 O(4)   
+
+​			      /   \ 		  /  \  		 /  \ 		 /    \     
+
+​						   ...	         ...	         ...   
+
+​    					   /  \     ...    / \    ...    / \  
+
+​	   f(a, 1) f(a, 1) ... f(a, 1) f(a, 1) ... f(a, 1) f(a, 1) 
+
+#### Queue and Stack
+
+1. **Queue**
+
+   + Create an empty queue:
+
+     Queue<Integer>
+
