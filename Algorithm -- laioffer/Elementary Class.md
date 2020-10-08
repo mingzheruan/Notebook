@@ -211,13 +211,13 @@ similar to instance variables, just belong to class but not an instance
 + **NullPointerException:** happens when we try to dereference a reference with null value
 + **ArrayIndexOutOfBoundException:** if the index specified is not in the valid range of the array.
 
-
+<br>
 
 ### ArrayList
 
 + ArrayList is regard as a **resizable** array
 
-
+<br>
 
 ### Recursion, Queue, Stack
 
@@ -240,5 +240,40 @@ similar to instance variables, just belong to class but not an instance
 2. **find recursion rule**
 3. **define base case**
 
+<br>
 
+```java
+Example 1: Fibonacci sequence:
+
+f(n)
+  0  1  2  3  4  5  6  7  8
+  0  1  1  2  3  4  8  13  21...
+  												a b
+  
+  
+  f(n)
+    - subproblem: f(n-1), f(n-2)
+    - recursion rule: f(n) = f(n - 1) + f(n - 2)
+    - base case: f(0) = 0, f(1) = 1
+      
+      
+      
+      
+      
+    public int fib(int n){
+      
+        //base case
+        if (n == 0) {
+            return 0;
+        } else if (n == 1){
+            return 1;
+        } else {
+        //recursion rule
+            return fib(n - 1) + fib(n - 2);
+        }
+    }
+
+```
+
+<br>
 
