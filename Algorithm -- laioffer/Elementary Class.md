@@ -361,11 +361,64 @@ Example 2: Power
 
 <br>
 
-#### Queue and Stack
+#### Queue and Stack (API)
 
 1. **Queue**
 
-   + Create an empty queue:
+   + **Create an empty queue:**
 
-     Queue<Integer>
+     Queue<Integer> queue = new LinkedList<>();
 
+   + **Add an element:**
+
+     queue.offer(1);
+
+     queue.offer(2);      // [1, 2]
+
+   + **Remove an element from the front:**
+
+     queue.poll();          //[2]
+
+   + **Take a look at the front element:**
+
+     int frontElement = queue.ppek();
+
+   + **Get the size of the queue:**
+
+     int queueSize = queue.size();
+
+   + **Determine whether the queue is empty:**
+
+     boolean isEmptyQueue = queue.isEmpty();
+
+
+
+<br>
+
+2. **Stack**
+
+   + **Create an empty stack:**
+
+     Deque<Integer> stack =  new LinkedList<>();
+
+   + **add an element:**
+
+     stack.push(1);
+
+     stack.push(2);   //  top: [2, 1]
+
+   + **Remove an element from the top:**
+
+     stack.pop();
+
+   + **Take a look at the top element:**
+
+     int topElement = stack.peek();
+
+   + **Get the size of the stack:**
+
+     int stackSize = stack.size();
+
+   + **Determine whether the stack is empty:**
+
+     boolean isEmptyStack = stack.isEmpty();
