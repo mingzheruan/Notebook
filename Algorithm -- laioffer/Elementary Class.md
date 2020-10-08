@@ -357,7 +357,7 @@ Example 2: Power
 
 +  **# of branches = # of usage of subproblems = # of recursive calls**
 
-
+![image](/Users/ruanmingzhe/Documents/GitHub/Notebook/Algorithm -- laioffer/Image/Elementary Class03.png)
 
 
 
