@@ -381,7 +381,7 @@ Example 2: Power
 
    + **Take a look at the front element:**
 
-     int frontElement = queue.ppek();
+     int frontElement = queue.peek();
 
    + **Get the size of the queue:**
 
