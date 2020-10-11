@@ -422,3 +422,4 @@ Example 2: Power
    + **Determine whether the stack is empty:**
 
      boolean isEmptyStack = stack.isEmpty();
+
