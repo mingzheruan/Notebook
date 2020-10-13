@@ -423,3 +423,18 @@ Example 2: Power
 
      boolean isEmptyStack = stack.isEmpty();
 
+
+
+### Binary Search
+
+
+
+
+
+### LinkList
+
+
+
+讲题的时候，从high level 说，
+
+之后说细节
