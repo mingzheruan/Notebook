@@ -533,6 +533,14 @@ target = 6, return {-1, -1} to represent the target number does not exist in the
   
   
   
+ public class SearchInSortedMatrixI {
+   //Assumptions: matrix is not null, and hase size N * M where N >= 0 and M >= 0.
+   //return {-1, -1} if not found
+   //Method 1 (not reconmmended): find row first then find col
+   
+   public int[] searchI (int)
+ }
+  
   
 ```
 
