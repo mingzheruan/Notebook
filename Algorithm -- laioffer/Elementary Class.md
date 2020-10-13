@@ -427,7 +427,20 @@ Example 2: Power
 
 ### Binary Search
 
+#### Principles of Binary Search
 
+1. we must guarantee that the search space decrease over time(after each iteration)
+2. we must guarantee that the target (if exists) cannot be ruled out accidentally, when we change the value of left or right. (It is critical to define the rule about how to move the ranger search)
+
+
+
+1. what does left, right mean?
+   - **Searching range: we guarantee the final answer is in [left, right] all the time**
+2. what does while loop do?
+   + **Using mid element to determine and guarantee next round, point 1 holds true**
+3. when should the while loop terminate(base case)?
+   + **it must be able to terminate, there should not be any infinite loop**
+   + **depends on how you define the recursive rule**
 
 
 
@@ -438,3 +451,4 @@ Example 2: Power
 讲题的时候，从high level 说，
 
 之后说细节
+
