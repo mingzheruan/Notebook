@@ -423,7 +423,7 @@ Example 2: Power
 
      boolean isEmptyStack = stack.isEmpty();
 
-
+<br>
 
 ### Binary Search
 
@@ -432,7 +432,7 @@ Example 2: Power
 1. we must guarantee that the search space decrease over time(after each iteration)
 2. we must guarantee that the target (if exists) cannot be ruled out accidentally, when we change the value of left or right. (It is critical to define the rule about how to move the ranger search)
 
-
+<br>
 
 1. what does left, right mean?
    - **Searching range: we guarantee the final answer is in [left, right] all the time**
@@ -441,6 +441,102 @@ Example 2: Power
 3. when should the while loop terminate(base case)?
    + **it must be able to terminate, there should not be any infinite loop**
    + **depends on how you define the recursive rule**
+
+<br>
+
+```
+Example 1: First Occurrence
+
+Given a target integer T and an integer array A sorted in ascending order, find the index of the first occurrence of T in A or return -1 if there is no such index.
+
+Assumptions
+
+There can be duplicate elements in the array.
+Examples
+
+A = {1, 2, 3}, T = 2, return 1
+A = {1, 2, 3}, T = 4, return -1
+A = {1, 2, 2, 2, 3}, T = 2, return 1
+Corner Cases
+
+What if A is null or A of zero length? We should return -1 in this case.
+
+
+
+
+
+public class FirstOccurrence {
+	public int fisrtOccur(int[] array, int target) {
+		if (array == null || array.length == 0) {
+			return -1;	
+		}
+		
+		int left = 0;
+		int right = array.length - 1;
+		
+		// we need to use left < right - 1 here to make sure there is no infinite loop.
+		// Think about the case when left == right - 1,
+		// then mid == left, it will be possible picking [mid, right] for the next round
+		// and it will go into an infinite loop in that case.
+		
+		while (left < right - 1) {
+			int mid = left + (right - left) / 2;
+			
+			if (array[mid] < target) {
+				left = mid;
+			} else {
+				right = mid;
+			}
+		}
+		
+		// Make sure you understand all the possible situations when entering
+		// this postprocessing procedure.
+		// 1. array has only 1 element.
+		// 2. array has only 2 element.
+		// 3. left == right - 1 and left is the result.
+		// 4. left == right - 1 and right is the result.
+		// 5. left == right - 1 and none of left, right is the result.
+		
+		if (array[left] == target) {
+			return left;
+		} 
+		if (array[right] == target){
+			return right;
+		}
+		return -1;
+	}
+}
+
+
+
+```
+
+<br>
+
+```java
+Example 2 : Search In Sorted Matrix I
+  
+Given a 2D matrix that contains integers only, which each row is sorted in an ascending order. The first element of next row is larger than (or equal to) the last element of previous row.
+
+Given a target number, returning the position that the target locates within the matrix. If the target number does not exist in the matrix, return {-1, -1}.
+
+Assumptions:
+
+The given matrix is not null, and has size of N * M, where N >= 0 and M >= 0.
+Examples:
+
+matrix = { {1, 2, 3}, {4, 5, 7}, {8, 9, 10} }
+
+target = 7, return {1, 2}
+
+target = 6, return {-1, -1} to represent the target number does not exist in the matrix.
+  
+  
+  
+  
+```
+
+
 
 
 
