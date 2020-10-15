@@ -206,13 +206,6 @@ similar to instance variables, just belong to class but not an instance
 
  </br>
 
-#### Errors:
-
-+ **NullPointerException:** happens when we try to dereference a reference with null value
-+ **ArrayIndexOutOfBoundException:** if the index specified is not in the valid range of the array.
-
-<br>
-
 ### ArrayList
 
 + ArrayList is regard as a **resizable** array
@@ -633,9 +626,12 @@ target = 6, return {-1, -1} to represent the target number does not exist in the
 
 ### LinkList
 
+#### Key points:
 
-
-
+1. when you want to access value/next of a ListNode, make sure it is not null pointer
+   1. If we want to access **p.next.next**, we need to ensure p != null && p.next != null
+   2. not swap the order
+2. Never ever lose the control of the head pointer of the LinkedList
 
 
 
