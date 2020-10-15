@@ -56,42 +56,8 @@ class ListNode {
   
 ```
 
-public class Solution {
+1		2		3		4		5		6		null
 
-​	public ListNode generate(int n) {
+​								S
 
-​		ListNode head = new ListNode(0);
-
-​		ListNode cur = head;
-
-​		for (int i = 1; i < n; i++) {
-
-​			ListNode node = new ListNode(n);
-
-​			cur.next = node;
-
-​			cur = cur.next;		
-
-​		}
-
-
-
-​	}
-
-}
-
-
-
-class ListNode {
-
-​	int value;
-
-​	ListNode next;
-
-​	public ListNode (int value) {
-
-​		this.value = value;	
-
-​	}
-
-}
+​																F
