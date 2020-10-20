@@ -635,6 +635,65 @@ target = 6, return {-1, -1} to represent the target number does not exist in the
 
 
 
+
+
+```java
+Method 1 : Reverse Linked List (iterative)
+   
+Reverse a singly-linked list iteratively.
+
+Examples
+
+L = null, return null
+L = 1 -> null, return 1 -> null
+L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
+
+  
+  
+  
+  			node1 -> node2 -> null
+
+									pre
+
+													cur
+
+													next
+  
+  
+public class Solution {
+  public ListNode reverse (ListNode head) {
+    if (head == null) {
+      return null;
+    }
+    ListNode pre = null, cur = head;
+    while (cur != null) {
+      ListNode nxt = cur.next;
+      cur.next = pre;
+      pre = cur;
+      cur = nxt; 
+    }
+    return pre;
+  }
+}
+
+
+
+Method 2 : Reverse Linked List (recursive)
+
+Reverse a singly-linked list recursively.
+
+Examples
+
+L = null, return null
+L = 1 -> null, return 1 -> null
+L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
+
+  
+
+```
+
+
+
 讲题的时候，从high level 说，
 
 之后说细节
