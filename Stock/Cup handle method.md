@@ -14,5 +14,5 @@
 
 + handle(小下跌) 一般在颈线下5%~15%的位置
 
-![image ]
+![image ](https://github.com/mingzheruan/Notebook/blob/master/Stock/Image/Stock01.png)
 
