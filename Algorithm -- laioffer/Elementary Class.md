@@ -1,3 +1,7 @@
+# Elementary Class
+
+[toc]
+
 ### Primitive Types and Basic Operations
 
 #### Primitive Types
