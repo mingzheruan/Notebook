@@ -1,6 +1,6 @@
 # Cup Handle method(欧奈尔突破法)
 
-+ 不要猜Cup右半边
++ 没走出来，不要猜Cup右半边
 
 + 如何画颈线
 
@@ -16,3 +16,7 @@
 
 ![image ](https://github.com/mingzheruan/Notebook/blob/master/Stock/Image/Stock01.png)
 
++ 盈利
+  + 底部可以通过cover call 赚钱（箱体整理）
+  + handle可以赚钱
+  + 向上突破可以，设置好止盈
