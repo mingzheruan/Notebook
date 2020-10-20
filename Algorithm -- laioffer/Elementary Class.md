@@ -1,40 +1,8 @@
 # Elementary Class
 
-- [Paste Your Document In Here](#paste-your-document-in-here)
-  * [And a table of contents](#and-a-table-of-contents)
-  * [On the right](#on-the-right)
-- [Elementary Class](#elementary-class)
-    + [Primitive Types and Basic Operations](#primitive-types-and-basic-operations)
-      - [Primitive Types](#primitive-types)
-      - [Operators and Precedence](#operators-and-precedence)
-    + [Array, Class and Objects](#array--class-and-objects)
-    + [Object Memory Layout](#object-memory-layout)
-      - [Memory spaces in a java program: Stack and Heap](#memory-spaces-in-a-java-program--stack-and-heap)
-    + [Review: Class / Object / Reference / Dereference](#review--class---object---reference---dereference)
-      - [Stack + Heap](#stack---heap)
-      - [Java Data Type](#java-data-type)
-    + [Variable Scope](#variable-scope)
-    + [Variables and their scopes](#variables-and-their-scopes)
-      - [Local variables](#local-variables)
-      - [Instance variable(field)](#instance-variable-field-)
-        * [Class variables (static)](#class-variables--static-)
-      - [Static](#static)
-    + [Stack and Heap Comparison](#stack-and-heap-comparison)
-    + [ArrayList](#arraylist)
-    + [Recursion, Queue, Stack](#recursion--queue--stack)
-      - [Recursion](#recursion)
-      - [(three steps methods)](#-three-steps-methods-)
-      - [Queue and Stack (API)](#queue-and-stack--api-)
-    + [Binary Search](#binary-search)
-      - [Principles of Binary Search](#principles-of-binary-search)
-    + [LinkList](#linklist)
-      - [Key points:](#key-points-)
+## Primitive Types and Basic Operations
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-### Primitive Types and Basic Operations
-
-#### Primitive Types
+### Primitive Types
 
 byte -- short -- int -- long -- float -- double -- char -- boolean
 
@@ -54,7 +22,7 @@ not from high precision type to lower precision type. Java will always help you 
 
   <br>
 
-#### Operators and Precedence
+### Operators and Precedence
 
 + bitwise AND ---- & 
 
@@ -84,7 +52,7 @@ not from high precision type to lower precision type. Java will always help you 
 
  <br>
 
-### Array, Class and Objects
+## Array, Class and Objects
 
 + You must specify the length of the array.
 + List, ArrayList, LinkedList are different to arrays!
@@ -117,7 +85,7 @@ firstStudent = new student
 
  </br>
 
-### Object Memory Layout
+## Object Memory Layout
 
 #### Memory spaces in a java program: Stack and Heap
 
@@ -133,9 +101,9 @@ firstStudent = new student
 
    </br>
 
-### Review: Class / Object / Reference / Dereference
+## Review: Class / Object / Reference / Dereference
 
-#### Stack + Heap
+### Stack + Heap
 
 1. Stack + Heap are memory (RAM) segments.
 
@@ -150,7 +118,7 @@ firstStudent = new student
 
  </br>
 
-#### Java Data Type
+### Java Data Type
 
 1. Primitive types: data directly stored in **memory**(no reference)
    1. Numeric
@@ -179,8 +147,6 @@ firstStudent = new student
 
 
  </br>
-
-
 
 ### Variable Scope
 
@@ -218,7 +184,7 @@ Instance variables' vasibility is defined by their access modifiers.
 
  </br>
 
-##### Class variables (static)
+#### Class variables (static)
 
 similar to instance variables, just belong to class but not an instance
 
@@ -246,9 +212,9 @@ similar to instance variables, just belong to class but not an instance
 
 <br>
 
-### Recursion, Queue, Stack
+## Recursion, Queue, Stack
 
-#### Recursion
+### Recursion
 
 1. function calls itself
 
@@ -388,7 +354,7 @@ Example 2: Power
 
 <br>
 
-#### Queue and Stack (API)
+### Queue and Stack (API)
 
 1. **Queue**
 
@@ -452,9 +418,9 @@ Example 2: Power
 
 <br>
 
-### Binary Search
+## Binary Search
 
-#### Principles of Binary Search
+### Principles of Binary Search
 
 1. we must guarantee that the search space decrease over time(after each iteration)
 2. we must guarantee that the target (if exists) cannot be ruled out accidentally, when we change the value of left or right. (It is critical to define the rule about how to move the ranger search)
@@ -654,13 +620,9 @@ target = 6, return {-1, -1} to represent the target number does not exist in the
    
 ```
 
+## LinkList
 
-
-
-
-### LinkList
-
-#### Key points:
+### Key points:
 
 1. when you want to access value/next of a ListNode, make sure it is not null pointer
    1. If we want to access **p.next.next**, we need to ensure p != null && p.next != null
@@ -725,6 +687,26 @@ L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
   
 
 ```
+
+<br>
+
+## Sorting Alforithms
+
+### Catorgories 
+
++ Selection Sort
++ Merge Sort
++ Quick Sort
++ Bubble Sort
++ Bucket Sort
++ Patient Sort
++ Smooth Sort
++ Cocktail Sort
++ ....
+
+### Selection Sort
+
+
 
 
 
