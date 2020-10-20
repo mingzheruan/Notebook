@@ -1,6 +1,36 @@
 # Elementary Class
 
-[toc]
+- [Paste Your Document In Here](#paste-your-document-in-here)
+  * [And a table of contents](#and-a-table-of-contents)
+  * [On the right](#on-the-right)
+- [Elementary Class](#elementary-class)
+    + [Primitive Types and Basic Operations](#primitive-types-and-basic-operations)
+      - [Primitive Types](#primitive-types)
+      - [Operators and Precedence](#operators-and-precedence)
+    + [Array, Class and Objects](#array--class-and-objects)
+    + [Object Memory Layout](#object-memory-layout)
+      - [Memory spaces in a java program: Stack and Heap](#memory-spaces-in-a-java-program--stack-and-heap)
+    + [Review: Class / Object / Reference / Dereference](#review--class---object---reference---dereference)
+      - [Stack + Heap](#stack---heap)
+      - [Java Data Type](#java-data-type)
+    + [Variable Scope](#variable-scope)
+    + [Variables and their scopes](#variables-and-their-scopes)
+      - [Local variables](#local-variables)
+      - [Instance variable(field)](#instance-variable-field-)
+        * [Class variables (static)](#class-variables--static-)
+      - [Static](#static)
+    + [Stack and Heap Comparison](#stack-and-heap-comparison)
+    + [ArrayList](#arraylist)
+    + [Recursion, Queue, Stack](#recursion--queue--stack)
+      - [Recursion](#recursion)
+      - [(three steps methods)](#-three-steps-methods-)
+      - [Queue and Stack (API)](#queue-and-stack--api-)
+    + [Binary Search](#binary-search)
+      - [Principles of Binary Search](#principles-of-binary-search)
+    + [LinkList](#linklist)
+      - [Key points:](#key-points-)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ### Primitive Types and Basic Operations
 
