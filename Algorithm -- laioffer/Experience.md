@@ -10,3 +10,6 @@
 
 ## Merge Sort (Recursion)
 
+1. subproblem
+2. recursion rule
+3. base case
