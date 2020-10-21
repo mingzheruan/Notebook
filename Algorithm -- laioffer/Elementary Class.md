@@ -708,6 +708,14 @@ L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
 
 
 
+### Merge Sort (Recursion)
+
+1. subproblem
+2. recursion rule
+3. base case
+
+![image04](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class04.png)
+
 
 
 讲题的时候，从high level 说，
