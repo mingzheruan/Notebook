@@ -788,6 +788,167 @@ public class MergeSort {
 
 ![image](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class06.png)
 
+<br>
+
+## Binary Tree
+
+### Basis Knowledge
+
+1. **Pre-order: current node before its subtrees**
+2. **In-order: current node in its subtrees**
+3. **Post-order: current node after its subtrees**
+
+<br>
+
+### pre-order: 
+
+从root出发，先打印我自己的，然后再用**同样的方法**打印我的左子树和右子树
+
++ f(root)
+  + subproblem: f(root.left), f(root.right)
+  + recursion rule: print(root.value), f(root.left), f(root.right)
+  + base case: null -> return
+
+<br>
+
+```java
+public void preOrder(TreeNode root) {
+  // base case
+  if (root == null) {
+    return;
+  }
+  
+  //print, go left, go right
+  System.out.println(root.value);
+  preOrder(root.left);
+  preOrder(root.right);
+}
+
+```
+
+<br>
+
+Time Complexity (n node):
+
+每调一层需要用：O(1)
+
+recursion总共被调用多少次： n 次
+
+TC: O(n)
+
+<br>
+
+Space Complexity (n node):
+
+heap: O(1)
+
+stack: O(height)
+
+SC: O(height), worst case: O(n), average: O(logn)
+
+
+
+### In-order:
+
+从root出发，先用**同样的方法**打印我的左子树，再打印我自己，再用**同样的方法**打印我的右子树
+
++ f(root)
+  + Subproblem : f(root.left), f(root.right)
+  + recursion rule: print(root.value), f(root.left), f(root.right)
+  + base case: null -> return
+
+```java
+public void preOrder(TreeNode root) {
+  //base case
+  if (root == null) {
+    return;
+  }
+  
+  //print, go left, go right
+  System.out.println(root.value);
+  preOrder(root.left);
+  preOrder(root.right);
+}
+```
+
+<br>
+
+<br>
+
+Time Complexity (n node):
+
+每调一层需要用：O(1)
+
+recursion总共被调用多少次： n 次
+
+TC: O(n)
+
+<br>
+
+Space Complexity (n node):
+
+heap: O(1)
+
+stack: O(height)
+
+SC: O(height), worst case: O(n), average: O(logn)
+
+<br>
+
+### post-order
+
+从root出发，先用**同样的方法**打印我的左子树，再用**同样的方法**打印我的右子树，最后再打印我自己
+
++ f(root)
+  + Subproblem : f(root.left), f(root.right)
+  + recursion rule: print(root.left), f(root.right), f(root.value)
+  + base case: null -> return
+
+```java
+public void postOrder(TreeNode root) {
+  //base case
+  if (root == null) {
+    return;
+  }
+  
+  //go left, go right, print
+  preOrder(root.left);
+  preOrder(root.right);
+  System.out.println(root.value);
+}
+```
+
+<br>
+
+Time Complexity (n node):
+
+每调一层需要用：O(1)
+
+recursion总共被调用多少次： n 次
+
+TC: O(n)
+
+<br>
+
+Space Complexity (n node):
+
+heap: O(1)
+
+stack: O(height)
+
+SC: O(height), worst case: O(n), average: O(logn)
+
+<br>
+
+
+
+### Basic Concept:
+
++ Height of binary tree: The distance between the root with the deepest leaf node.
++ Balanced binary tree: is commonly defined as a binary tree in which the depth (also known as height) of the left and right subtrees of every node differ by 1 or less
+  + for each of the nodes in this binary tree
+  + satisfy: the height of leftsubtree, rightsubtree at most diff by 1.
+
 
 
 讲题的时候，从high level 说，
