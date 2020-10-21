@@ -780,6 +780,14 @@ public class MergeSort {
 }
 ```
 
+<br>
+
+![image](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class05.png)
+
+<br>
+
+
+
 
 
 讲题的时候，从high level 说，
