@@ -716,6 +716,70 @@ L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
 
 ![image04](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class04.png)
 
+<br>
+
+```java
+Example: Merge Sort
+  
+public class MergeSort {
+  public int[] mergeSort(int[] array) {
+    //corner case
+    if (array == null || array.length <= 1) {
+      return array;
+    }
+    return mergeSort(array, 0, array.length - 1);
+  }
+  
+  private int[] mergeSort(int[] array, int left, int right) {
+    //base case
+    if (left == right) {
+      return new int[] {array[left]};
+    }
+    
+    //recursion
+    int mid = left + (right - left) / 2;
+    int[] leftResult = mergeSort(array, left, mid);
+    int[] rightResult = mergeSort(array, mid + 1, right);
+    int[] result = merge(leftResult, rightResult);
+    return result;
+  }
+  
+  private int[] merge(int[] leftResult, int[] rightResult) {
+    int[] result = new int[leftResult.length + rightResult.length];
+    int i = 0;
+    int j = 0;
+    int k = 0;
+    
+    while (i < leftResult.length && j < rightResult.length) {
+      if (leftResult[i] > rightResult[j]) {
+        result[k] = rightResult[j];
+        j++;
+      } else {	// leftResult[i] <= rightResult[j]
+        result[k] = leftResult[i];
+        i++
+      }
+      k++;
+    }
+    while (i < leftResult.length) {
+      result[k] = leftResult[i];
+      i++;
+      k++;
+    }
+    while (j < rightResult.length) {
+      result[k] = rightResult[j];
+      j++;
+      k++;
+    }
+    return result;
+  }
+  
+  public static void main(String[] args) {
+    //TODO Auto-generated method stub
+  }
+  
+}
+```
+
 
 
 讲题的时候，从high level 说，
