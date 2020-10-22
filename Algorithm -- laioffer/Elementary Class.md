@@ -959,6 +959,20 @@ SC: O(height), worst case: O(n), average: O(logn)
 
 
 
+quickSort 
+
+面试的时候时间复杂度分析一定要分开考虑
+
+worst case: O(n^2)
+
+average case: O(nlogn)
+
+
+
+
+
+
+
 讲题的时候，从high level 说，
 
 之后说细节
