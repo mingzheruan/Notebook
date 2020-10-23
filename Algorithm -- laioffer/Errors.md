@@ -4,7 +4,9 @@
 + **ArrayIndexOutOfBoundException:** if the index specified is not in the valid range of the array.
 + **Illegal Character**
 + **Cannot Find Symbol  Assert.assertEquals**
++ java.io.IOException
 
 <br>
 
 ### 
+
