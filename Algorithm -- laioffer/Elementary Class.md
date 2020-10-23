@@ -354,7 +354,7 @@ Example 2: Power
 
 <br>
 
-### Queue and Stack (API)
+### Queue and Stack and ArrayList(API)
 
 1. **Queue**
 
@@ -394,7 +394,7 @@ Example 2: Power
 
      Deque<Integer> stack =  new LinkedList<>();
 
-   + **add an element:**
+   + **Add an element:**
 
      stack.push(1);
 
@@ -417,6 +417,26 @@ Example 2: Power
      boolean isEmptyStack = stack.isEmpty();
 
 <br>
+
+3. **ArrayList**
+
+   + **Create an empty ArrayList:**
+
+     List<Integer> newList = new ArrayList<Integer>();
+
+   + **Add an element:**
+
+     newList.add(1);
+
+   + **Get the size of List (size means the number of used cells, not the capacity) :**
+
+     newList.size();
+
+   + **Get (int index) : like array[index]**
+
+     newList.get(0);
+
+     <br>
 
 ## Binary Search
 
