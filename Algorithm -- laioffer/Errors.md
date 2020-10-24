@@ -4,9 +4,11 @@
 + **ArrayIndexOutOfBoundException:** if the index specified is not in the valid range of the array.
 + **Illegal Character**
 + **Cannot Find Symbol  Assert.assertEquals**
-+ java.io.IOException
++ **Java.io.IOException:** 
+  + incompatible types: int[] cannot be converted to int
+  + incompatible types: unexpected return value
 
 <br>
 
-### 
+ ### 
 
