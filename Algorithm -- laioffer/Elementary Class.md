@@ -640,6 +640,8 @@ target = 6, return {-1, -1} to represent the target number does not exist in the
    
 ```
 
+<br>
+
 ## LinkList
 
 ### Key points:
@@ -651,7 +653,7 @@ target = 6, return {-1, -1} to represent the target number does not exist in the
 
 
 
-
+<br>
 
 ```java
 Method 1 : Reverse Linked List (iterative)
@@ -726,13 +728,15 @@ L = 1 -> 2 -> 3 -> null, return 3 -> 2 -> 1 -> null
 
 ### Selection Sort
 
-
+<br>
 
 ### Merge Sort (Recursion)
 
 1. subproblem
 2. recursion rule
 3. base case
+
+<br>
 
 ![image04](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image/Elementary%20Class04.png)
 
@@ -866,7 +870,7 @@ stack: O(height)
 
 SC: O(height), worst case: O(n), average: O(logn)
 
-
+<br>
 
 ### In-order:
 
@@ -984,17 +988,23 @@ SC: O(height), worst case: O(n), average: O(logn)
   + Quicksort all number to the left of 5
   + Quicksort all numbers to the right of 5
 
+  <br>
+
   ``` 
   void quickSort(int[] array, int left, int right);
   quickSort(array, left, i - 1);
   quickSort(array, i + 1, right);
   ```
 
+  <br>
+
 + Base case: left >= right
 
   + {1, 2}. {2, 1} -> continue recursion
   + {1} ???        -> is a base case, left == right
   + {}???           -> is a base case, left > right
+
+  <br>
 
 ```java
 public class QuickSort {
@@ -1074,7 +1084,7 @@ public class QuickSort {
 
    pivotIndex 实际随机数范围为[left, right]
 
-
+<br>
 
 ### Time Complexity:
 
@@ -1082,13 +1092,19 @@ worst case: n (number of recursion layer) * n = O(n ^ 2)
 
 average case: logn (number of recursion layer) = O(nlogn)
 
-
+<br>
 
 ### Space Complexity:
 
 auxiliary space by variable ->
 
 recursion stack: worst case: O(n)     average: O(logn)
+
+
+
+<br>
+
+
 
 quickSort 
 
