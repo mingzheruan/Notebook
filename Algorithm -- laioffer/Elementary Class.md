@@ -977,11 +977,118 @@ SC: O(height), worst case: O(n), average: O(logn)
 
 ### Summary:
 
++ 把一个pivot value找到真正属于它的index，在寻找的同时吧所有比该value小的放在左，大和等的放在右
+
++ Recursive rule:  
+
+  + Quicksort all number to the left of 5
+  + Quicksort all numbers to the right of 5
+
+  ``` 
+  void quickSort(int[] array, int left, int right);
+  quickSort(array, left, i - 1);
+  quickSort(array, i + 1, right);
+  ```
+
++ Base case: left >= right
+
+  + {1, 2}. {2, 1} -> continue recursion
+  + {1} ???        -> is a base case, left == right
+  + {}???           -> is a base case, left > right
+
+```java
+public class QuickSort {
+  private Random random = new Random();
+  
+  private void swap(int[] array, int x, int y) {
+    int temp = array[x];
+    array[x] = array[y];
+    array[y] = temp;
+  }
+  
+  private void quickSort(int[], int left, int right) {
+    if (left >= right) {
+      return;
+    }
+    // random.nextInt(9) -> [0,9)
+    // goal: randomly choose [left, right]
+    // left + [0, right - left]
+    // left + [0, right - left + 1]
+    int pivotIndex = left + random.nextInt(right - left + 1);
+    
+    swap(array, pivotIndex, right);
+    
+    int i = left;
+    int j = right - 1;
+    
+    while (i <= j) {
+      if (array[i] < array[right]) {
+        i++;
+      } else {
+        swap(array, i, j);
+        j--;
+      }
+    }
+    
+    swap(array, right, i);
+    quickSort(array, left, i - 1);
+   	quickSort(array, i + 1, right);
+  }
+  public void quickSort(int[] array) {
+    if (array == null || array.length <= 1) {
+      return;
+    }
+    quickSort(array, 0, array.length - 1);
+  }
+  
+  public static void main (String[] args) {
+    int a[] = {3, 1, 10};
+    QuickSort quickSort = new QuickSort();
+    quickSort.quickSort(a);
+    
+    for (int i : a) {
+      System.out.print(i + ",");
+    }
+  }
+  
+}
+```
 
 
 
+<br>
+
+1. 为什么又两个quickSort?
+
+   method overloading. 函数名字相同，但parameter type list 不同的 functions
+
+2. Random是什么？
+
+   随机数生成的工具类，在本例中用于生成指定范围内均匀分布的整数随机数。
+
+3. rand.nextInt（right - left + 1）表示什么意思
+
+   rand类型为Random, 该实例的方法nextInt （x）表示产生一个范围[0, x-1]的均匀分布的随机整数，所以nextInt(right - left + 1)表示产生范围[0, right - left]的均匀分布的随机整数。
+
+   int pivotIndex = left + random.nextInt(right - left + 1);
+
+   pivotIndex 实际随机数范围为[left, right]
 
 
+
+### Time Complexity:
+
+worst case: n (number of recursion layer) * n = O(n ^ 2)
+
+average case: logn (number of recursion layer) = O(nlogn)
+
+
+
+### Space Complexity:
+
+auxiliary space by variable ->
+
+recursion stack: worst case: O(n)     average: O(logn)
 
 quickSort 
 
