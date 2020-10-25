@@ -12,3 +12,12 @@
 
  ### 
 
+string 不能转为 char
+
+
+
+
+
+object 传的是 reference
+
+fib的时间复杂度
