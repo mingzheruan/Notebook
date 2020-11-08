@@ -93,6 +93,14 @@ double quote is **string**
   - Name of the method
   - The list of the parameter types
 
+### Return Type
+
+It can be
+
++ A primitive type: int , double, char, boolean
++ A class: TreeNode, ListNode
++ Void: no return value
+
 ## Array, Class and Objects
 
 + You must specify the length of the array.
