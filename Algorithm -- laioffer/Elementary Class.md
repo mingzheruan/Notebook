@@ -12,15 +12,21 @@ byte -> short -> int -> long -> float -> double
 
 &nbsp;		&nbsp;&nbsp;&nbsp;		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Widening (精度)
 
-it is okay to cast lower precision type to higher precision type implicitly. 
+it is okay to cast lower precision type to higher precision type implicitly.
 
-not from high precision type to lower precision type. Java will always help you to perform casting to higher precision if needed
+Not from high precision type to lower precision type. Java will always help you to perform casting to higher precision if needed
 
 ```diff
  if you are not sure, always use explicit conversion!!!
 ```
 
   <br>
+
+single quote is **char**
+
+double quote is **string**
+
+<br>
 
 ### Operators and Precedence
 
@@ -51,6 +57,41 @@ not from high precision type to lower precision type. Java will always help you 
   if( foo() || goo() ) ---- if foo() is true, the judgement is over. no run goo()
 
  <br>
+
+### Break and Continue
+
++ Break: jumps out of the entire loop
++ Continue: skip the current iteration
+
+<br>
+
+### Visibility
+
++ public: the world
++ protected: subclass and classes in the same package
++ default (i.e. no modifier): classes in the same package
++ private: only this class
+
+<br>
+
+### Date Definition Name 
+
++ Class Name: starts with capital letter  
+
+  eg: PriorityQueue
+
++ Method Name, variable name: starts with lower-case letter 
+
+  eg: camelCasing
+
+  performGoodOperation
+
+  <br>
+
+  Function signature in Java:
+
+  - Name of the method
+  - The list of the parameter types
 
 ## Array, Class and Objects
 
