@@ -101,7 +101,35 @@ It can be
 + A class: TreeNode, ListNode
 + Void: no return value
 
+<br>
+
 ## Array, Class and Objects
+
+1.  **Basic operation**
+
+   1. 创建 (construction)
+   2. 初始化 (initialization)
+   3. 读写 (read/write)
+   4. 长度/维度 (length/dimension)
+   5. 遍历 (traversal)
+
+2. 主函数 (Main Function)
+
+   1. public static void main (String[] args)
+
+3. 面向对象范式 (Object-oriented Paradigm)
+
+   1. 概念: 类 (class) 、 对象 (object) 、 引用 (reference)、 解引用 (dereference)
+   2. 一行代码四件事： Student tom = new Student("Tom", 5, 4.0);
+      1. 变量声明 (Declaration)
+      2. 实例化 (Instantiation)
+      3. 成员变量初始化 (Initialization)
+      4. 引用赋值 (Assignment)
+   3. 内存布局 (memory layout)
+      1. 概念：堆 (heap) 、栈 (stack)
+      2. 区别：内存大小、存储的数据
+
+   <br>
 
 + You must specify the length of the array.
 + List, ArrayList, LinkedList are different to arrays!
@@ -169,7 +197,7 @@ firstStudent = new student
 
 ### Java Data Type
 
-1. Primitive types: data directly stored in **memory**(no reference)
+1. Primitive types: data directly stored in **memory** (no reference)
    1. Numeric
       1. Integer
          + byte short int long
@@ -183,7 +211,7 @@ firstStudent = new student
       + boolean
       
        </br>
-2. Reference types: objects stored in heap(operated by references)
+2. Reference types: objects stored in heap (operated by references)
    1. class
    2. Interface
    3. Enum
@@ -193,15 +221,13 @@ firstStudent = new student
 + Serves as object states (fields) - heap
 + Serves as temporary variables in our methods (local variables) - stack
 
-
-
  </br>
 
 ### Variable Scope
 
 1. Scope: **lifetime and accessibility/visibility** of a variable. ~ How large the scope depends on where a variable is declared.
 2. Simply, the scope is the **innermost{}** wrapping up the **declaration**.
-3. Local (local to function) variables: the variables whose lifetime is strictly tied with a function. 
+3. Local (local to function) variables: the variables whose lifetime is strictly tied with a function.  
 
  </br>
 
