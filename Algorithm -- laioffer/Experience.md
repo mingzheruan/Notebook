@@ -1,4 +1,20 @@
-# Experience
+# Experience (Aha-moment)
+
+## Binary Search
+
+important: 下面left = mid + 1 要考虑是否包含了相关元素，不能漏掉元素
+
+loop循环，得考虑是几个元素left < right - 1 考虑不能陷入死循环，
+
+i < j - 1   when search space has 3 or more elements 会导致剩三个元素，左left 右right 中间mid，不会越界
+
+2个会死循环								
+
+​							
+
+target一定不在哪，把那部分
+
+
 
 ## Recursion
 
@@ -15,6 +31,19 @@
 3. base case
 
 <br>
+
+3遍训练法：
+
+1. 第一遍，打code，总结错误
+2. 第二遍，自己打，解释算法（不超过两分钟）
+
+<br>
+
+
+
+<br>
+
+物理意义：干什么的
 
 ## Practice Speaking
 
