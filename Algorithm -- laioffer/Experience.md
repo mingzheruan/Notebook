@@ -16,6 +16,14 @@ target一定不在哪，把那部分
 
 
 
+
+
+Object 上所有的field 都在heap上，field又指向同在field上的数据
+
+
+
+
+
 ## Recursion
 
 1. subproblem

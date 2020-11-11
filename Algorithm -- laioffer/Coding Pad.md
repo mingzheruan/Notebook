@@ -8,6 +8,7 @@ public int peak (int[] array) {
   while (left < right) {
     int mid = left + (right - left) / 2;
     
+    
     if (array[left] )
   }
 }
