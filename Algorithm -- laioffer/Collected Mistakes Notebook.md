@@ -82,6 +82,11 @@
         // can not find
         return -1;
     }
+   T
+1  2  
+l
+m		
+   r
 ```
 
 <br>
@@ -89,7 +94,13 @@
 ### Important and difficult points: 
 
 1. BinarySearch有两个难点：
-   1. loop中循环的条件
+   1. loop中循环的条件，这决定loop将会留有几个元素，但是有可能陷入死循环
+   2. 在调整mid时，需要注意是否漏掉相关元素
+
+2. BinarySearch中：
+   1. 需要想target一定不在哪个区间内，并且排除这部分区域以减少搜索空间
+
+
 
 
 
@@ -100,7 +111,5 @@ loop循环，得考虑是几个元素left < right - 1 考虑不能陷入死循�
 i < j - 1   when search space has 3 or more elements 会导致剩三个元素，左left 右right 中间mid，不会越界
 
 2个会死循环								
-
-​							
 
 target一定不在哪，把那部分排除
