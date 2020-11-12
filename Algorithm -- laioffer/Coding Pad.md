@@ -27,7 +27,7 @@ public int[] kClosest(int[] array, int target, int k) {
   int[] result = new int[k];
   
   for (int i = 0; i < k; i++) {
-    if (target - array[left] <= array[right] - target) {
+    if (right >= array.legnth || left >= 0 && target - array[left] <= array[right] - target) {
       result[i] = array[left];
       left = left - 1;
     }
@@ -58,6 +58,9 @@ private int findSmallerElement (int array, int target) {
   if (array[right] == target) {
     return right;
   }
+  
+  // it not find
+  return -1;
 }
   
 ```
