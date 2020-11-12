@@ -54,6 +54,8 @@
    1. duplicate? It could be
    2.  matrix is ascending order or descending order?       ascending order
    3. Data Structure?  only integer
+   
+   
 2. Assumption
    1. size? in memory?
    2. signature? input? int target? output?

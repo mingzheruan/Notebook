@@ -28,3 +28,24 @@ array
 
 Time complexity is O(logn)
 
+
+
+
+
+```java
+quickSelect:
+
+input: int[] array, int target, int left, int right, int k
+
+output int[] result
+  
+  
+  public int[] findKClosest(int[] array, int target, int k) {
+  quickSelect();
+  int[] result = new int[k];
+  for (int i = 0; i < k; i++)
+}
+```
+
+
+
