@@ -2,7 +2,7 @@
 
 ## Binary Search
 
-important: 下面left = mid + 1 要考虑是否包含了相关元素，不能漏掉元素
+important: 下面 left = mid + 1 要考虑是否包含了相关元素，不能漏掉元素
 
 loop循环，得考虑是几个元素left < right - 1 考虑不能陷入死循环，
 
@@ -12,7 +12,7 @@ i < j - 1   when search space has 3 or more elements 会导致剩三个元素，
 
 ​							
 
-target一定不在哪，把那部分
+target一定不在哪，把那部分排除
 
 
 

@@ -6,7 +6,11 @@ Student firstStudent = new Student("Tom");
 
 "firstStudent" is an reference. "new Student" is instantiation and it stored in heap. 
 
+<br>
+
 ![Image](https://github.com/mingzheruan/Notebook/blob/master/Algorithm%20--%20laioffer/Image(Utimate%20Class)/UtimateClass01.png)
+
+<br>
 
 where to store local variables:
 
