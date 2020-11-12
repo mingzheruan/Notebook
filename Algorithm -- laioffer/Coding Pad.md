@@ -20,3 +20,11 @@ Given a target integer T, a non-negative integer K and an integer array A sorted
 
 
 
+Input: int[] array int target int k  Output: int[] result
+
+corner case: 
+
+array  
+
+Time complexity is O(logn)
+
