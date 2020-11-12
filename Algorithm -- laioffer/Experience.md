@@ -70,8 +70,6 @@ Object 上所有的field 都在heap上，field又指向同在field上的数据
    4. algorithm? Binary search
    5. Time?
 
-
-
 1. explain high-level idea by one sentence
 2. explain every important data structure and physical significance of variable
 3. explain the algorithm in mid-level, for example, initialization, how to do in each step, terminal condition, and base case + recursive rule
