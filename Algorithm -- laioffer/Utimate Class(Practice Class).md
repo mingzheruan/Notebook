@@ -12,6 +12,10 @@ Student firstStudent = new Student("Tom");
 
 <br>
 
+Object 上所有的field 都在heap上，field又指向同在field上的数据
+
+<br>
+
 where to store local variables:
 
 + primative: stack

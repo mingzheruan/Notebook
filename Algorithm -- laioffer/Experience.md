@@ -2,23 +2,14 @@
 
 ## Binary Search
 
-important: 下面 left = mid + 1 要考虑是否包含了相关元素，不能漏掉元素
+1. BinarySearch有两个难点：
+   1. loop中循环的条件，这决定loop将会留有几个元素，但是有可能陷入死循环(使用left < right - 1这个条件不会陷入死循环，但需要后续判断两个元素的值；如果是left <= right 注意可能陷入死循环)
+   2. 在调整mid与right、left的值时，需要注意是否有可能漏掉重要元素
 
-loop循环，得考虑是几个元素left < right - 1 考虑不能陷入死循环，
-
-i < j - 1   when search space has 3 or more elements 会导致剩三个元素，左left 右right 中间mid，不会越界
-
-2个会死循环								
-
-​							
-
-target一定不在哪，把那部分排除
+2. BinarySearch中：
+   1. 需要想target一定不在哪个区间内，并且排除这部分区域以减少搜索空间
 
 
-
-
-
-Object 上所有的field 都在heap上，field又指向同在field上的数据
 
 
 
