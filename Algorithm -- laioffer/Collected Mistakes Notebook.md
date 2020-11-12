@@ -86,6 +86,21 @@
 
 <br>
 
-### Important points: 
+### Important and difficult points: 
 
-1. 
+1. BinarySearch有两个难点：
+   1. loop中循环的条件
+
+
+
+important: 下面 left = mid + 1 要考虑是否包含了相关元素，不能漏掉元素
+
+loop循环，得考虑是几个元素left < right - 1 考虑不能陷入死循环，
+
+i < j - 1   when search space has 3 or more elements 会导致剩三个元素，左left 右right 中间mid，不会越界
+
+2个会死循环								
+
+​							
+
+target一定不在哪，把那部分排除

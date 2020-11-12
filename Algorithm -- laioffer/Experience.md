@@ -57,31 +57,23 @@ Object 上所有的field 都在heap上，field又指向同在field上的数据
 
 ### Content
 
+**CART**
+
+1. Clarification
+   1. duplicate? It could be
+   2.  matrix is ascending order or descending order?       ascending order
+   3. Data Structure?  only integer
+2. Assumption
+   1. size? in memory?
+   2. signature? input? int target? output?
+   3. corner case?
+   4. algorithm? Binary search
+   5. Time?
+
+
+
 1. explain high-level idea by one sentence
 2. explain every important data structure and physical significance of variable
 3. explain the algorithm in mid-level, for example, initialization, how to do in each step, terminal condition, and base case + recursive rule
 4. time complexity and space complexity
 
-eg: 
-
-So the maxProdut function, take the input length of rope
-
-and return max product of cutting.
-
-<br>
-
-we always assume the length is greater than one,
-
-<br>
-
-and before, we are doing these,  dynamic programming, we have to allocate int array, of size of them plus one 
-
-<br>
-
-for the base case, we are saving index zero and one to zero
-
-......................(one sentence)
-
-for the induction rule
-
-we are using two loops
