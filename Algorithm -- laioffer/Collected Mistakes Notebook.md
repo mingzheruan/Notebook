@@ -64,7 +64,11 @@
         // find the largest smaller or equal element's index in the array
         int left = 0;
         int right = array.length - 1;
-
+      
+      1 2 3 4 5 6 7
+      l
+            m
+									r
         while (left < right - 1)                                                                                                                       
             int mid = left + (right - left) / 2;
             if (array[mid] <= target) {
