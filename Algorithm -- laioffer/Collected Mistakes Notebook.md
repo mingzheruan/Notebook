@@ -39,6 +39,7 @@
         int left = largestSmallerEqual(array, target);
         int right = left + 1;
         int[] result = new int [k];
+      
         // this is a typical merge operation
 
         for (int i = 0; i < k; i++) {
@@ -59,10 +60,11 @@
 
     private int largestSmallerEqual(int[] array, int target) {
         // find the largest smaller or equal element's index in the array
+      
         int left = 0;
         int right = array.length - 1;
       
-        while (left < right - 1)                                                                                                                       
+        while (left < right - 1)                                                           
             int mid = left + (right - left) / 2;
             if (array[mid] <= target) {
                 left = mid;
@@ -81,11 +83,6 @@
         // can not find
         return -1;
     }
-   T
-1  2  
-l
-m		
-   r
 ```
 
 <br>
