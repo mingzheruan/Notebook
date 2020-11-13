@@ -71,4 +71,6 @@
 1.  Document your assumptions
 2.  Explain your approach and how you intend to slove the problem
 3.  Provide code comments where applicable
-4.  Explain
+4.  Explain the big-O run time complexity of your solution. justfy your answer
+5.  Identify andy additional data structures you used and justify why you used them
+6.  only provide your best answer to each part of the question.
