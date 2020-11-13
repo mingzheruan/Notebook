@@ -50,16 +50,25 @@
    1. duplicate? It could be
    2.  matrix is ascending order or descending order?       ascending order
    3. Data Structure?  only integer
-   
 2. Assumption
    1. size? in memory?
    2. signature? input? int target? output?
    3. corner case?
    4. algorithm? Binary search
    5. Time?
+3. Result(code)
+4. Test
+
+
 
 1. explain high-level idea by one sentence
 2. explain every important data structure and physical significance of variable
 3. explain the algorithm in mid-level, for example, initialization, how to do in each step, terminal condition, and base case + recursive rule
 4. time complexity and space complexity
 
+
+
+1.  Document your assumptions
+2.  Explain your approach and how you intend to slove the problem
+3.  Provide code comments where applicable
+4.  Explain
