@@ -19,22 +19,7 @@
 
 <br>
 
-## Merge Sort (Recursion)
-
-1. subproblem
-2. recursion rule
-3. base case
-
-<br>
-
-3遍训练法：
-
-1. 第一遍，打code，总结错误
-2. 第二遍，自己打，解释算法（不超过两分钟）
-
-<br>
-
-
+static belong to class, not ot object
 
 <br>
 
