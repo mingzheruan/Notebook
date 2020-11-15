@@ -40,7 +40,7 @@ Recursion
     1.  Base case: smallest problem to solve
     2.  Recursive rule: how to make the problem smaller (if we can resolve the same problem but with a smaller size, then what is left to do for the current problem size n)
 
-
+## Class3
 
 
 

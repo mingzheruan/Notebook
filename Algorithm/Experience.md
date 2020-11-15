@@ -25,6 +25,8 @@ static belong to class, not ot object
 
 物理意义：干什么的
 
+---------------
+
 ## Practice Speaking
 
 ### Content
@@ -43,6 +45,49 @@ static belong to class, not ot object
    5. Time?
 3. Result(code)
 4. Test
+
+-------------------------------------------------------------
+
+Clarification
+
+Solution
+
+Coding
+
+Test
+
+<br>
+
+Clarification:
+
+1.  应用题转化为算法题
+2.  Input: int array, target: int
+    1.  int array: not null, not empty, sorted/ascending/duplicate, positive number
+    2.  target: int, positive
+3.  Output (index):
+    1.  no solution: return -1
+    2.  multiple solutionL return any
+    3.  一个solution: return index
+
+<br>
+
+Solution
+
+1.  High level: why binary search？ 本质： 执行一套逻辑使得每次的搜索空间是上一次搜索空间的一半
+2.  物理意义：过例子（画图）
+3.  时空复杂度 
+
+<br>
+
+Coding
+
+<br>
+
+Test
+
+<br>
+
+------------
 
 
 
