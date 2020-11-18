@@ -2,7 +2,6 @@
 
 ```JAVA
 
-
 ListNode appendHead(ListNode head, int value) {
     ListNode newHead = new ListNode(value);
     newHead.next = head;
