@@ -43,11 +43,12 @@
         // this is a typical merge operation
 
         for (int i = 0; i < k; i++) {
+            // 分情况讨论：3种情况，最后可以合并
             // we can advance the left pointer when:
             // 1. right pointer is already out of bound.
             // 2. right pointer is not out of bound, left pointer is not out of
             //    bound, and array[left] is closer to target.
-
+            
             if (right >= array.length || left >= 0 && target - array[left] <= array[right] - target) {
                 result[i] = array[left--];
             } else {
@@ -72,6 +73,8 @@
                 right = mid;
             }
         }
+        // 如何确定是先判断右边还是左边？
+        // 
 
         if (array[right] <= target) {
             return right;
