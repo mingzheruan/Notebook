@@ -17,3 +17,5 @@
 对链表结构产生改变，一定会有deference，在heap上改变链表结构
 
 ## Practice Class 6
+
+讲时间复杂度，需要定义n
