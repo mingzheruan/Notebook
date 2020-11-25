@@ -19,3 +19,5 @@
 ## Practice Class 6
 
 讲时间复杂度，需要定义n
+
+分析时间复杂度，先画recursive tree 
