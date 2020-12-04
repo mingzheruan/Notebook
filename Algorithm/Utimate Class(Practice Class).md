@@ -1,6 +1,6 @@
 # Utimate Class ( Aha moment)
 
-# Class1
+## Class1 Classes, objects, and reference I
 
 Student firstStudent = new Student("Tom");    
 
@@ -31,21 +31,41 @@ where to store fields:
 
     <br>
 
-Java 传值，不传地址
+**Java pass by value(copy), not by reference**
+
++   primitive type: copy of the value itself
+
++   object: copy of the object reference
 
 
 
-## Class2 Recursion I && Sorting Algorithms
+## Class2 Classes, objects, and references - II
 
-Recursion
+## static : 
 
-1.  表象上: function calls itself
-2.  实质上: Boil down a big problem to smaller ones (size n depends on size n-1, or n-2 or...n/2)
-3.  Implementation 上:
-    1.  Base case: smallest problem to solve
-    2.  Recursive rule: how to make the problem smaller (if we can resolve the same problem but with a smaller size, then what is left to do for the current problem size n)
+Members (fields, methods, classes) belong to class, not object(instance)【一旦使用static，这个就是此class的共有属性，不在属于单个实例】
 
-## Class3
+<br>
+
+## Final:
+
+Constants: "Once assigned, cannot be changed." 
+
+Final class: A class that cannot be derived.
+
+Final method: A method that cannot be overridden.（无法重写）
+
+Final variable: A variable that once assigned, cannot be assigned again.
+
+<br>
+
+## object
+
++   the elements in the array still occupy consecutive memory space on the heap
++   "length" is a field of the array object
++   **array length cannot be changed after the array object is created. (final)**
+
+## Class3 Practice Problems
 
 
 
