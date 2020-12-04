@@ -26,7 +26,10 @@ where to store local variables:
 where to store fields:
 
 + primitive: heap
+
 + object: heap (**its reference stores in heap as well!!!**)
+
+    <br>
 
 Java 传值，不传地址
 

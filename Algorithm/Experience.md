@@ -11,6 +11,8 @@
 
 <br>
 
+-----------------
+
 ## Recursion
 
 1. subproblem
@@ -29,34 +31,7 @@ static belong to class, not ot object
 
 ## Practice Speaking
 
-### Content
-
 **CART**
-
-1. Clarification
-   1. duplicate? It could be
-   2.  matrix is ascending order or descending order?       ascending order
-   3. Data Structure?  only integer
-2. Assumption
-   1. size? in memory?
-   2. signature? input? int target? output?
-   3. corner case?
-   4. algorithm? Binary search
-   5. Time?
-3. Result(code)
-4. Test
-
--------------------------------------------------------------
-
-Clarification
-
-Solution
-
-Coding
-
-Test
-
-<br>
 
 Clarification:
 
@@ -81,6 +56,9 @@ Solution
 <br>
 
 Coding
+
+1.  readable 
+2.  format/style
 
 <br>
 
