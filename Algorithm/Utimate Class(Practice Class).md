@@ -28,6 +28,8 @@ where to store fields:
 + primitive: heap
 + object: heap (**its reference stores in heap as well!!!**)
 
+Java 传值，不传地址
+
 
 
 ## Class2 Recursion I && Sorting Algorithms
