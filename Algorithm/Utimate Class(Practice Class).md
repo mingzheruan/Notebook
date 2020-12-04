@@ -270,13 +270,58 @@ Test:
 
     ====================================
 
-    
+### Linked List Operations
+
+length()
+
+get(index)
+
+appendHead()
+
+appendTail()
+
+<br>
+
+head could be changed - we need to return the new head if changed
+
+usually need to consider
+
++   head == null
++   head.next == null
+
+while loop - we need to understand what is the terminate condition
+
+<br>
+
+linked list (自己拼的乐高小火车，车厢是ListNode)
+
+vs
+
+LinkedList（高铁)
+
+<br>
+
+### LinkedList in Java
+
+```java
+class ListNode<E> {
+    E e;
+    private ListNode<E> prev;
+    private ListNode<E> next;
+}
+
+E cannot be a primitive type
+```
+
+**Interface  提要求**
 
 LinkedList 不能失去对头的控制
 
 快慢指针， N3更好（偶数）， 当将链表拆分为2半的时候，方便断开
 
 
+
+## Class 5: Practice Problems
 
 
 
