@@ -65,9 +65,181 @@ Final variable: A variable that once assigned, cannot be assigned again.
 +   "length" is a field of the array object
 +   **array length cannot be changed after the array object is created. (final)**
 
+<br>
+
 ## Class3 Practice Problems
 
+**CART**
 
+Clarification:
+
+1.  应用题转化为算法题
+2.  Input: int array, target: int
+    1.  int array: not null, not empty, sorted/ascending/duplicate, positive number
+    2.  target: int, positive
+3.  Output (index):
+    1.  no solution: return -1
+    2.  multiple solutionL return any
+    3.  一个solution: return index
+
+<br>
+
+Solution
+
+1.  High level: why binary search？ 本质： 执行一套逻辑使得每次的搜索空间是上一次搜索空间的一半
+2.  物理意义：过例子（画图）
+3.  Case1,2,3,4
+4.  时空复杂度 
+
+<br>
+
+Coding
+
+1.  readable 
+2.  format/style
+
+<br>
+
+Test
+
+------------
+
+Example:
+
+**CART**
+
+Clarification:
+
+1.  应用题转化为算法题
+2.  Input: int array, target: int
+    1.  int array: null, empty, sorted/ascending/duplicate, positive number
+    2.  target: int, positive
+3.  Output (index):
+    1.  no solution: return -1
+    2.  multiple solutionL return any
+    3.  一个solution: return index
+
+<br>
+
+Solution
+
+1.  High level: why binary search？ 本质： 执行一套逻辑使得每次的搜索空间是上一次搜索空间的一半
+2.  物理意义：过例子（画图）
+3.  时空复杂度：T: LogN
+
+<br>
+
+Code
+
+```java
+public class closest {
+    public int closest(int[] array, int target) {
+        if (array == null || array.length == 0) {
+            return -1;
+        }
+        
+        int left = 0;
+        int right = array.length - 1;
+        while (left < right - 1) {
+            int mid = left + (right - left) / 2;
+            if (array[mid] == target) {
+                return mid;
+            } else if (array[mid] < target) {
+                left = mid;
+            } else {
+                right = mid;
+            }
+        }
+        
+        if (Math.abs(array[left] - target) <= Math.abs(array[right] - target)) {
+            return left;
+        }
+        
+        return right;
+    }
+}
+```
+
+
+
+<br>
+
+Test
+
+----------------
+
+Example:
+
+**CART**
+
+Clarification:
+
+1.  应用题转化为算法题
+2.  Input: int array, target: int,  k: int
+    1.  int array: null, empty, sorted/ascending/duplicate, positive number
+    2.  target: int, positive
+    3.  k: k>= 0
+3.  Output (int array with value):
+    1.  没有 solution: return empty array
+    2.  k > array.length: return original full array
+    3.  multiple solution: return any
+    4.  一个solution: return int array with value
+    5.  order?
+
+<br>
+
+Solution:
+
+1.  High level: why binary search？ 本质： 执行一套逻辑使得每次的搜索空间是上一次搜索空间的一半
+    1.  step1: find the closest index to the target
+    2.  step2: expand from the closest index to both left/right side
+2.  物理意义：过例子（画图）
+3.  时空复杂度：T: LogN + K 
+
+<br>
+
+Code:
+
+```java
+1 3 5 9 11
+l
+    	r
+output: [5, 3, 9]
+T: 6, K = 4 -> 1, 3, 5, 9 or 3, 5, 9, 11
+    
+
+public int[] kClosest(int[] array, int target, int k) {
+    if (array == null || array.length == 0) {
+        return new int[0];
+    }
+    if (k == 0) {
+        return new int[0];
+    }
+    if (k >= array.length) {
+        return array;
+    }
+    
+    int left = closest(array, target);
+    int right = left + 1;
+    int[] result = new int[k];
+    for (int i = 0; i < k; i++) {
+        if (right >= array.length || left >= 0 && Math.abs(array[left] - target <= Math.abs(array[right] - target))) {
+            result[i] = array[left--];
+        } else {
+            result[i] = array[right++];
+        }
+    }
+    return result;
+}    
+```
+
+
+
+<br>
+
+Test:
+
+<br>
 
 ## Class4
 
