@@ -1,6 +1,6 @@
 # Utimate Class ( Aha moment)
 
-## Class1 Classes, objects, and reference I
+## Class1: Classes, objects, and reference I
 
 Student firstStudent = new Student("Tom");    
 
@@ -39,7 +39,7 @@ where to store fields:
 
 
 
-## Class2 Classes, objects, and references - II
+## Class2: Classes, objects, and references - II
 
 ## static : 
 
@@ -67,7 +67,7 @@ Final variable: A variable that once assigned, cannot be assigned again.
 
 <br>
 
-## Class3 Practice Problems
+## Class3: Practice Problems
 
 **CART**
 
@@ -241,7 +241,36 @@ Test:
 
 <br>
 
-## Class4
+## Class4: Linked list and Java List
+
+### array vs linked list Comparison
+
++   Memory Layout
+
+    +   Array: consecutive allocated memory space, no **overhead**
+    +   Linked List: non-consecutive, overhead of multiple objects with the "next" reference
+
++   (Random) access time? - get i th element
+
+    +   Array: O(1) -> calculating the offset is O(1) int value = array[5];
+    +   Linked List: O(n) worst case -> we can only traverse from the HEAD
+
++   Search time (non-sorted)?
+
+    +   Array: O(n)
+    +   Linked List: O(n)
+
+    ====================================
+
+    Search time (sorted)
+
+    +   Array: O(logn) - binary search
+    +   Linked List: O(n)
+    +   Reason: random access time is different for array and list.
+
+    ====================================
+
+    
 
 LinkedList 不能失去对头的控制
 
