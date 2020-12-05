@@ -1,5 +1,9 @@
 # Experience (Aha-moment)
 
+## General Experience
+
+**写代码要分逻辑来写，不要将多重逻辑综合在一块写，否则会很难写以及很难读。**
+
 ## Binary Search
 
 1. BinarySearch有两个难点：

@@ -1,6 +1,6 @@
-# Collected Mistakes - LinkedList
+# Remove Nth Node From End of List
 
-## 1. Remove Nth Node From End of List
+
 
 ```java
 /*
@@ -49,4 +49,9 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
     
     
 ```
+
+### Important and difficult points: 
+
+1. 注意边界问题
+
 
