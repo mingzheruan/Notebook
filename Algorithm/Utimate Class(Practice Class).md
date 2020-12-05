@@ -116,7 +116,7 @@ Clarification:
     2.  target: int, positive
 3.  Output (index):
     1.  no solution: return -1
-    2.  multiple solutionL return any
+    2.  multiple solution: return any
     3.  一个solution: return index
 
 <br>
