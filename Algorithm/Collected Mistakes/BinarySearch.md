@@ -1,8 +1,6 @@
 # Collected Mistakes - Binary Search
 
-## 1. BinarySearch
-
-### Code
+## 1. kClosest
 
 ```java
  		public int[] kClosest(int[] array, int target, int k) {
