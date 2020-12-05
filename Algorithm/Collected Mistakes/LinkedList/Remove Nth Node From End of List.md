@@ -52,6 +52,5 @@ public ListNode removeNthFromEnd(ListNode head, int n) {
 
 ### Important and difficult points: 
 
-1. 注意边界问题
-
-
+1. 注意边界问题, test case[[1,2,3,4,5,6,7],7]; 	[[1,2,3,4,5,6,7],8]; 	[[1,2,3,4,5,6,7],800]
+2. 当需要对头节点操作时，一定要使用dummy

@@ -87,3 +87,9 @@ Test
 4.  Explain the big-O run time complexity of your solution. justfy your answer
 5.  Identify andy additional data structures you used and justify why you used them
 6.  only provide your best answer to each part of the question.
+
+------------
+
+## LinkedList
+
+如果涉及对表头进行操作，一定要使用dummy.
