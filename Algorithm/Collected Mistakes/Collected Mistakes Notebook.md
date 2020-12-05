@@ -1,4 +1,4 @@
-# Collected Mistakes Notebook
+# Collected Mistakes - Binary Search
 
 ## 1. BinarySearch
 
