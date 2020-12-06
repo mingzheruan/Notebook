@@ -323,5 +323,31 @@ LinkedList 不能失去对头的控制
 
 ## Class 5: Practice Problems
 
+## ArrayList
+
+### ArrayList is regarded as a **resizable** array.
+
++   maintain an array with potential unused cells
++   will expand the array if there is no unused cells available
+    +   by replacing the maintained array with a new larger array (1.5 times larger by default)
+
+```java
+class ArrayList<E> {
+    private E[] array; // the maintained array, the current maximum capacity is array.length;
+    private int size; // the number of actually used cells in the maintained array
+}
+```
 
 
+
+### 注意区分:
+
+1.  size: 目前装进去的元素个数
+2.  capacity: 能装元素个数的上限 -- unlimited
+3.  current capacity: 能装元素个数目前的上限（不用extend的情况下） -- array.length
+
+关系：size <= current capacity
+
+### APIs:
+
+get(int index): array[index], index: [0,index)
