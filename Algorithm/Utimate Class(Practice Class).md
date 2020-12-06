@@ -350,4 +350,13 @@ class ArrayList<E> {
 
 ### APIs:
 
-get(int index): array[index], index: [0,index)
+get(int index): array[index], index: [0, size)
+
+set(int index, E e): array[index] = e, index: [0, size)
+
+size(): size
+
+add(E e) 
+
+
+
