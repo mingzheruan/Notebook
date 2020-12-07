@@ -367,3 +367,8 @@ add(E e)
 
 ## Class 6: Queue, Stack, and Deque
 
+| 数据结构（逻辑层面）|  
+
+|        :--------------:       |fds 
+
+|        Queue                |
