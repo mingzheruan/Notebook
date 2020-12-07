@@ -368,7 +368,7 @@ add(E e)
 ## Class 6: Queue, Stack, and Deque
 
 ```java
-				[List] 						  ____ [Queue]
+                 [List]                        ____ [Queue]
 				/  |  \			     		/   /       \    \
 			  /	   |	\			      /  [Deque]      \    \
             /      |      \             /  /                \    \
