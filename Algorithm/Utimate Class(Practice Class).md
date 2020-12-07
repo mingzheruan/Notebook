@@ -367,11 +367,9 @@ add(E e)
 
 ## Class 6: Queue, Stack, and Deque
 
-| 数据结构 |  数据结构 |   
+数据结构 |  数据结构
 
-|        ----:                       |               :----                 |
+​       ----:                       |               :----              
 
-|        Queue                 |         Queue                   |
-
-
+​     Queue                 |         Queue                
 
