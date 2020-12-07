@@ -367,6 +367,19 @@ add(E e)
 
 ## Class 6: Queue, Stack, and Deque
 
+```java
+				[List] 						  ____ [Queue]
+				/  |  \			     		/   /       \    \
+			  /	   |	\			      /  [Deque]      \    \
+            /      |      \             /  /                \    \
+          /        |        \         /  /                    \    \
+    ArrayList    stack*       LinkedList                ArrayDeque  PriorityQueue        
+                    
+stack: API设计有问题，不常用,可以通过Deque实现
+[]: interface
+no[]: implementation
+```
+
 
 
 | 数据结构（逻辑层面） | 内存里的存放方法  |    对应java class     | 对应java interfere |
@@ -374,4 +387,6 @@ add(E e)
 |     queue (FIFO)     | array/linked list | ArrayDeque/LinkedList |       Queue        |
 |     stack(LIFO)      | array/linked list | ArrayDeque/LinkedList |       Deque        |
 |        deque         | array/linked list | ArrayDeque/LinkedList |       Deque        |
+
+
 
