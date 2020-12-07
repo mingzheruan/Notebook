@@ -365,3 +365,5 @@ add(E e)
     1.  when the **time complexity is similar** for using ArrayList and LinkedList, use ArrayList. (**Overhead and Locality**)
 3.  **Stack** and **Vector** class are not recommended, whenever you need a vector, use ArrayList, whenever you need a Stack, use Deque(LinkedList, ArrayDeque).
 
+## Class 6: Queue, Stack, and Deque
+
