@@ -358,5 +358,10 @@ size(): size
 
 add(E e) 
 
+### ArrayList vs LinkedList
 
+1.  If you have a lot of **random access** operations, use ArrayList
+2.  If you always **add/remove at the tail**, use ArrayList
+    1.  when the **time complexity is similar** for using ArrayList and LinkedList, use ArrayList. (**Overhead and Locality**)
+3.  **Stack** and **Vector** class are not recommended, whenever you need a vector, use ArrayList, whenever you need a Stack, use Deque(LinkedList, ArrayDeque).
 
