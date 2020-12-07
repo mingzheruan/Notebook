@@ -369,8 +369,8 @@ add(E e)
 
 ```java
                  [List]                        ____ [Queue]
-				/  |  \			     		/   /       \    \
-			  /	   |	\			      /  [Deque]      \    \
+                /  |  \	                    /   /       \    \
+              /	   |	\                 /  [Deque]      \    \
             /      |      \             /  /                \    \
           /        |        \         /  /                    \    \
     ArrayList    stack*       LinkedList                ArrayDeque  PriorityQueue        
