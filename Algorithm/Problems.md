@@ -44,3 +44,4 @@ Integer
 
 isEqual() 比的是数值
 
+使用interfere去定义变量，有利于向后兼容
