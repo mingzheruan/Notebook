@@ -116,7 +116,19 @@ Method 2 (better TC: O(n))
   }
 ```
 
-Importance 
+## Method 1 vs Method 2 
 
 方法二好在哪里：
+
+```java
+recursion tree
+                             IsBalanced(root: n nodes)
+                       getHeight(C1)                 getHeight(C2)
+                           n/2             +              n/2
+                            Time spent in this node = O(n)                           = n
+                         /                                   \
+                      
+```
+
+
 
