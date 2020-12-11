@@ -122,7 +122,7 @@ Method1: recursion tree
           n/4      +       n/4                       n/4      +       n/4                               
       Time spent in this node = O(n/2)          Time spent in this node = O(n/2)     = n
       /                           \                 /                           \
-IsBalanced(C11)             IsBalanced(C12)   IsBalanced(C11)     IsBalanced(C12)    = n
+IsBalanced(C11)             IsBalanced(C12)   IsBalanced(C11)     IsBalanced(C12)    
   n/8 + n/8                    n/8 + n/8        n/8 + n/8             n/8 + n/8
     O(n/4)                       O(n/4)           O(n/4)                O(n/4)       = n
     /   \                          / \              /  \                 /  \
