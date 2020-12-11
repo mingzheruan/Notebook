@@ -111,7 +111,7 @@ Method 2 (better TC: O(n))
 
 ```java
 Method1: recursion tree
-                             IsBalanced(root: n nodes)
+                               IsBalanced(root: n nodes)
                        getHeight(C1)                 getHeight(C2)
                            n/2             +              n/2
                             Time spent in this node = O(n)                           = n
@@ -134,6 +134,16 @@ Tree 的时间复杂度一般是： O(所有节点个数 * 单个节点所用的
     
 When the Tree is balanced tree -> SC: O(logn)
 When the Tree is not balanced tree -> SC: O(n) (worst case)
+    
+Method2 : recursion tree
+                                  height()                         
+                      /                               \
+                      
+              height(C1)                             height(C2)
+      /                    \                  /                      \
+height(C11)             height(C12)        height(C11)          height(C12)       
+    /   \                   / \             /  \                     /  \
+...........
 ```
 
 
