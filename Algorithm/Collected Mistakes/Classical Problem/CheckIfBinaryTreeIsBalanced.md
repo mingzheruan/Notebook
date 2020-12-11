@@ -143,7 +143,7 @@ Method2 : recursion tree
       /                    \                  /                      \
 height(C11)             height(C12)        height(C11)          height(C12)       
     /   \                   / \             /  \                     /  \
-...........
+.............
 ```
 
 
