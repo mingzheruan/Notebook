@@ -134,6 +134,10 @@ recursion tree
       Time spent in this node = O(n/2)          Time spent in this node = O(n/2)     = n
       /                           \                 /                           \
 IsBalanced(C11)             IsBalanced(C12)   IsBalanced(C11)     IsBalanced(C12)    = n
+  n/8 + n/8                    n/8 + n/8        n/8 + n/8             n/8 + n/8
+    O(n/4)                       O(n/4)           O(n/4)                O(n/4)       = n
+    /   \                          / \              /  \                 /  \
+    ...........
 ```
 
 
