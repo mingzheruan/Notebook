@@ -110,7 +110,7 @@ Method 2 (better TC: O(n))
 方法二好在哪里：
 
 ```java
-recursion tree
+Method1: recursion tree
                              IsBalanced(root: n nodes)
                        getHeight(C1)                 getHeight(C2)
                            n/2             +              n/2
@@ -127,6 +127,9 @@ IsBalanced(C11)             IsBalanced(C12)   IsBalanced(C11)     IsBalanced(C12
     O(n/4)                       O(n/4)           O(n/4)                O(n/4)       = n
     /   \                          / \              /  \                 /  \
     ...........
+    
+Tree 的时间复杂度一般是： O(所有节点个数 * 单个节点所用的时间复杂度)
+
 ```
 
 
