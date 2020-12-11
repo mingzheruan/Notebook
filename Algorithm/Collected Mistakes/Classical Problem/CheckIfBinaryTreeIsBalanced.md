@@ -57,30 +57,19 @@ Method 1
     if (root == null) {
       return true;
     }
-
-    return height(root) != -1;
+	int leftHeight = findHeight(root.left);
+    int rightHeight = findHeight(root.right);
+    if (Math.abs(leftHeight - rightHeight) > 1) {
+      return false;
+    }
+    return isBalanced(root.left) && isBalanced(root.right);
   }
   
-  private int height(TreeNode root) {
+  private int findHeight(TreeNode root) {
     if (root == null) {
       return 0;
     }
-
-    int leftHeight = height(root.left);
-    if (leftHeight == -1) {
-      return -1;
-    }
-
-    int rightHeight = height(root.right);
-    if (rightHeight == -1) {
-      return -1;
-    }
-
-    if (Math.abs(leftHeight - rightHeight) > 1) {
-      return -1;
-    }
-
-    return Math.max(leftHeight, rightHeight) + 1;
+    return Math.max(findHeight(root.left), findHeight(root.right)) + 1;
   }
 
 Method 2 (better TC: O(n))
