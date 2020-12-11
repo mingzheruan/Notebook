@@ -144,6 +144,10 @@ Method2 : recursion tree
 height(C11)             height(C12)        height(C11)          height(C12)       
     /   \                   / \             /  \                     /  \
 ...............
+    
+*******此方法好在只调用了自身，并没有调用其他辅助函数，所以时间复杂度为 O(n)*******
+When the Tree is balanced tree -> SC: O(logn)
+When the Tree is not balanced tree -> SC: O(n) (worst case)    
 ```
 
 
