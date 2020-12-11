@@ -128,6 +128,12 @@ recursion tree
                             Time spent in this node = O(n)                           = n
                          /                                   \
                       
+       IsBalanced(C1: n/2 nodes)                      IsBalanced(C2: n/2 nodes)
+     getHeight(C11)     getHeight(C12)              getHeight(C21)     getHeight(C22)
+          n/4      +       n/4                           n/4      +       n/4                               
+      Time spent in this node = O(n/2)              Time spent in this node = O(n/2) = n
+      /                           \
+    
 ```
 
 
