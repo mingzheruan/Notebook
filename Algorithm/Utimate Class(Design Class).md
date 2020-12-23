@@ -11,3 +11,10 @@
 
 
 
+simulation 
+
+use case & functionality  -> input, output
+
+框架
+
+complete code
