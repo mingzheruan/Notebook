@@ -150,6 +150,8 @@ Describle the parking lot building? Vehicle monitoring? What kind of parking lot
 
 
 
+
+
 simulation 
 
 use case & functionality  -> input, output
