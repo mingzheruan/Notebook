@@ -148,7 +148,35 @@ Override: a subclass or child class to provide a specific implementation of a me
 
 Describle the parking lot building? Vehicle monitoring? What kind of parking lot?
 
+use cases -> Functionalities -> APIs
 
+For API, always ask yourself: input/output?
+
+**Some other questions that may affect your design:**
+
+one level or multiple levels?
+
+Parking-Spot / Vehicle sizes?
+
+Track the location of each vehicle?
+
+2.  Classes and their relationships
+
+    **Data - Classes and their member fields**
+
+    **Action - Methods**
+
+    **Single-responsibility Principle:** A class should have only one job
+
+    Vehicle, Parking Spot, Level, ParkingLot...
+
+    Class relationships:
+
+    **Association:** a general binary relationship that describes an activity between two classes
+
+    **Aggregation/Composition:** a special form of association, which represents an ownership relationship between two classes. (has-a)
+
+    
 
 
 
