@@ -9,14 +9,30 @@
 1. BinarySearch有两个难点：
    1. loop中循环的条件，这决定loop将会留有几个元素，但是有可能陷入死循环(使用left < right - 1这个条件不会陷入死循环，但需要后续判断两个元素的值；如果是left <= right 注意可能陷入死循环)
    2. 在调整mid与right、left的值时，需要注意是否有可能漏掉重要元素
+
 2. BinarySearch中：
+   
    1. 需要想target一定不在哪个区间内，并且排除这部分区域以减少搜索空间
+   
 3. BinarySearch套路:
+
     1. 定义左右边界
+
     2. while循环
+
         1. 定义mid的边界 mid  = left + (right - left) / 2
+
         2. 判断条件
-            1. 情况一：left < right 
+
+            1. 情况一：left <= right 
+
+                需判断 mid == target
+
+                以及后续左右边界的变化
+
+                
+
+                
 
 <br>
 
