@@ -65,7 +65,7 @@ static belong to class, not ot object
 
 **CART**
 
-Clarification:
+Clarification & Assumption
 
 1.  应用题转化为算法题
 2.  Input: int array, target: int
@@ -78,7 +78,7 @@ Clarification:
 
 <br>
 
-Solution
+Solution(example)
 
 1.  High level: why binary search？ 本质： 执行一套逻辑使得每次的搜索空间是上一次搜索空间的一半
 2.  物理意义：过例子（画图）
