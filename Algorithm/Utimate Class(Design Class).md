@@ -1,6 +1,6 @@
 # Utimate Class(Design Class)
 
-## 
+## OOD
 
 ## Basic Concepts
 
@@ -187,3 +187,12 @@ use case & functionality  -> input, output
 框架
 
 complete code
+
+
+
+## System Design Class 1 - Web Application Overview
+
+Sql vs noSql
+
+ Relational DB VS file system
+
