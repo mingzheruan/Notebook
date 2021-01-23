@@ -71,7 +71,10 @@ Principles of Binary Search:
 
 ### BFS-2 (Date structure: priority_queue)
 
+经典算法: Dijkstra's Algorithm (runtime efficiency improvement: A* algorithm)
 
+1.  Usages: Find the shortest path cost from a single node (source node) to any other nodes in that graph （点到面（==所有点）的最短距离算法）
+2.  Data structure: Priority_queue(Min_Heap)
 
 -----------------
 
