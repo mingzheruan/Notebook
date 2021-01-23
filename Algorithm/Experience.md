@@ -47,7 +47,31 @@ Principles of Binary Search:
 
 ## BFS
 
-1.  
+### BFS-1 ()
+
+1.  Data structure:
+    1.  FIFO queue
+    2.  Flag: whether i detected bubbles
+2.  Expand: dequeue
+3.  Generate:
+    1.  when the flag is off, if the left child or the right child is null, set the flag
+    2.  when the flag is on, if the left child or the right child is not null, return false
+4.  Terminate
+    1.  queue is empty or return false in the generation process
+
+
+
+**Solution**
+
+1.  BFS: expand + generate
+2.  case 1: left = null, right = non-null, return false
+3.  case 2: after detecting the first node that misses one child, then check whether all following nodes expanded to see whether they have any node generated (if any -> then false)
+
+​				
+
+### BFS-2 (Date structure: priority_queue)
+
+
 
 -----------------
 
