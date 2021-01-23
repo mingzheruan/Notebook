@@ -111,7 +111,7 @@ Clarification & Assumption
 Solution(example)
 
 1.  High level: why binary search？ 本质： 执行一套逻辑使得每次的搜索空间是上一次搜索空间的一半
-2.  物理意义：过例子（画图）
+2.  物理意义（一一对应 开闭区间）：过例子（画图）
 3.  Case1,2,3,4
 4.  时空复杂度 
 
