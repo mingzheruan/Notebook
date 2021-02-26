@@ -13,3 +13,11 @@
 
 +   The `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data.
 
+### 3. Comment
+
++   You can add comments to your HTML source by using the following syntax:
++   <!-- Write your comments here -->
+
+### 4. Span
+
++   A <span> element which is used to color a part of a text:
