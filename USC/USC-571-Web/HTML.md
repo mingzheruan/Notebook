@@ -1,6 +1,6 @@
-# HTML
+# HTML("Top 20")
 
-## General Structure
+### 1. General Structure
 
 1.  Html documents have a head and body
 
@@ -8,3 +8,8 @@
 +   body may have paragraphs
 
 2.  A leading line indicates which version of HTML
+
+### 2. meta
+
++   The `<meta>` tag defines metadata about an HTML document. Metadata is data (information) about data.
+
