@@ -80,3 +80,22 @@ public solution {
 
 ## First Occurrence
 
+Given a target integer T and an integer array A sorted in ascending order, find the index of the first occurrence of T in A or return -1 if there is no such index.
+
+**Examples**
+
+-   A = {1, 2, 3}, T = 2, return 1
+-   A = {1, 2, 3}, T = 4, return -1
+-   A = {1, 2, 2, 2, 3}, T = 2, return 1
+
+```java
+/*
+1.Clarification:
+	(1) input: 
+	(2) output:
+2.Assumption
+3.Result
+4.Test
+*/
+```
+
