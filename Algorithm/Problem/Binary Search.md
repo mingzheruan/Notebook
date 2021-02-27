@@ -248,3 +248,13 @@ public class Solution {
 |                   O(logn)                   |       O(1)       |
 | each iteration, traversing half of elements |  no extra space  |
 
+
+
+
+
+<hr>
+
+
+
+
+
