@@ -27,8 +27,8 @@ there are some duplication, and we can return any of the indices i that A[i] == 
 use binarysearch to solve this problem, 
 Base case: 
 	(1) if (array[i] == target), return i
-	(2) if (array[mid] > target), left = mid;
-	(3) if (array[mid] < target), right = mid;
+	(2) if (array[mid] > target), right = mid;
+	(3) if (array[mid] < target), left = mid;
 	
 4. Test:(array, target)
 null, => return array
@@ -53,9 +53,9 @@ public solution {
             
             if (array[mid] == target) {
                 return mid;
-            } else if (array[mid] > target) {
-                left = mid + 1;
             } else if (array[mid] < target) {
+                left = mid + 1;
+            } else if (array[mid] > target) {
                 right = mid - 1;
             }
         }
@@ -72,5 +72,11 @@ public solution {
 
 
 
+|   次数   |                错误                |                             原因                             |
+| :------: | :--------------------------------: | :----------------------------------------------------------: |
+| 1st time | 当array[mid] > target, 弄错 边界了 | <font style = "color: red">应该在base case 阶段过一遍例子！！！</font> |
 
+
+
+## First Occurrence
 
