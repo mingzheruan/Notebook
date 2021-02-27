@@ -67,7 +67,7 @@ public solution {
 
 |               Time Complexity               | Space Complexity |
 | :-----------------------------------------: | :--------------: |
-|                    O(n)                     |       O(1)       |
+|                   O(logn)                   |       O(1)       |
 | each iteration, traversing half of elements |  no extra space  |
 
 
@@ -160,7 +160,7 @@ public Solution {
 
 |               Time Complexity               | Space Complexity |
 | :-----------------------------------------: | :--------------: |
-|                    O(n)                     |       O(1)       |
+|                   O(logn)                   |       O(1)       |
 | each iteration, traversing half of elements |  no extra space  |
 
 
@@ -245,6 +245,6 @@ public class Solution {
 
 |               Time Complexity               | Space Complexity |
 | :-----------------------------------------: | :--------------: |
-|                    O(n)                     |       O(1)       |
+|                   O(logn)                   |       O(1)       |
 | each iteration, traversing half of elements |  no extra space  |
 
