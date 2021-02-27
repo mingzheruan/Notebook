@@ -1,4 +1,6 @@
-# Classical Binary Search
+# Binary Search
+
+## Classical Binary Search
 
 Given a target integer T and an integer array A sorted in ascending order, find the index i such that A[i] == T or return -1 if there is no such index.
 
@@ -23,13 +25,52 @@ there are some duplication, and we can return any of the indices i that A[i] == 
 
 3. Result:
 use binarysearch to solve this problem, 
-Base case: if (A[i] == target), return i
-
+Base case: 
+	(1) if (array[i] == target), return i
+	(2) if (array[mid] > target), left = mid;
+	(3) if (array[mid] < target), right = mid;
+	
 4. Test:(array, target)
-null, return null
-[""], return null
+null, => return array
+[""], => return array
+[1], => return 1
+[1,1,2,2,2], 2 => return 2,3 or 4
+[1,1,2,2], 2 => return 2 or 3
 */
+
+public solution {
+    public int binarySearch(int[] array, int target) {
+        // cornor case
+        if (array == null || array.length == 0) {
+            return -1;
+        }
+        
+        int left = 0;
+        int right = array.length - 1;
+        
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            
+            if (array[mid] == target) {
+                return mid;
+            } else if (array[mid] > target) {
+                left = mid + 1;
+            } else if (array[mid] < target) {
+                right = mid - 1;
+            }
+        }
+        
+        return -1;
+    }
+}
 ```
+
+|               Time Complexity               | Space Complexity |
+| :-----------------------------------------: | :--------------: |
+|                    O(n)                     |       O(1)       |
+| each iteration, traversing half of elements |  no extra space  |
+
+
 
 
 
