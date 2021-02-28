@@ -282,7 +282,7 @@ output:
 2. Assumption
 	the given matrix is not null, and has size of N * M, where N >= 0 and M >= 0.
 3. Result
-	use bianry search to solve this problem
+	convert 2D array into 1D array and use bianry search to solve this problem
 	index	0 1 2
 		0	1 2 3
 		1	4 5 6
@@ -294,7 +294,26 @@ output:
 
 public Solution {
     public int[] search(int[][] matrix, int target) {
-        int row 
+        if (matrix.length == null || matrix[0].length == 0) {
+            return {-1, -1};
+        }
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        
+        int left = 0;
+        int right = rows * cols - 1;
+        
+        while (left <= right) {
+            int mid = left + (right - left) / 2;
+            int row = mid / cols;
+            int col = mid % cols;
+                
+            if (matrix[row][col] == target) {
+                return {row, col};
+            } else if (martrix[row][col] > target) {
+                
+            }
+        }
     }
 }
 ```
