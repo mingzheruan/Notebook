@@ -294,8 +294,8 @@ output:
 
 public Solution {
     public int[] search(int[][] matrix, int target) {
-        if (matrix.length == null || matrix[0].length == 0) {
-            return {-1, -1};
+        if (matrix.length == 0 || matrix[0].length == 0) {
+            return new int[]{-1, -1};
         }
         int rows = matrix.length;
         int cols = matrix[0].length;
@@ -309,14 +309,77 @@ public Solution {
             int col = mid % cols;
                 
             if (matrix[row][col] == target) {
-                return {row, col};
-            } else if (martrix[row][col] > target) {
-                
+                return new int[]{row, col};
+            } else if (matrix[row][col] > target) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
             }
         }
+        return new int[]{-1, -1};
     }
 }
 ```
+
+
+
+|               Time Complexity               | Space Complexity |
+| :-----------------------------------------: | :--------------: |
+|                   O(logn)                   |       O(1)       |
+| each iteration, traversing half of elements |    new int[]     |
+
+
+
+|   次数   |        错误        | 解决方法 | 注意 |
+| :------: | :----------------: | :------: | ---- |
+| 1st time | 标之间转换出了问题 | 多想几遍 |      |
+
+
+
+<hr>
+
+
+
+## Closest In Sorted Array
+
+Given a target integer T and an integer array A sorted in ascending order, find the index i in A such that A[i] is closest to T.
+
+**Examples**
+
+-   A = {1, 2, 3}, T = 2, return 1
+-   A = {1, 4, 6}, T = 3, return 1
+-   A = {1, 4, 6}, T = 5, return 1 or 2
+-   A = {1, 3, 3, 4}, T = 2, return 0 or 1 or 2
+
+```java
+/*
+1. Clarification
+input: a target, an integer array sorted in ascending order
+output:
+
+2. Assumption
+3. Result
+4. Test
+*/
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
