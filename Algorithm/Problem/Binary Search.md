@@ -282,9 +282,21 @@ output:
 2. Assumption
 	the given matrix is not null, and has size of N * M, where N >= 0 and M >= 0.
 3. Result
-	use bianry search to solve this problem, 
+	use bianry search to solve this problem
+	index	0 1 2
+		0	1 2 3
+		1	4 5 6
+		2	7 8 9
+	
 4. Test
+	{1, 2, 3}, {4, 5, 7}, {8, 9, 10}  T: 5  => return {1, 1}
 */
+
+public Solution {
+    public int[] search(int[][] matrix, int target) {
+        int row 
+    }
+}
 ```
 
 
