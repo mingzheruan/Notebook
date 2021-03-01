@@ -356,8 +356,92 @@ Given a target integer T and an integer array A sorted in ascending order, find 
 1. Clarification
 input: a target, an integer array sorted in ascending order
 output:
+	(1) find target, return index
+	(2) no target, return -1;
 
 2. Assumption
+	There are some duplicate elements. return any index of A[i] that is closest to target. 
+3. Result
+	use binary search and gain the closest elements
+	base case: 
+		(1) if (array[mid] == target) return mid;
+		(2) if (array[mid] > target) right = mid;
+		(3) if (array[mid] < target) left = mid;
+4. Test (int[] array, int target)
+	null,   => return -1
+    [""],   => return -1
+    [1,2,3], 2.6 => return 2
+*/
+
+public Solution {
+    public int closest(int[] array, int target) {
+        // corner case
+        if (array == null || array.length == 0) {
+            return -1;
+        }
+        
+        int left = 0;
+        int right = array.length - 1;
+        
+        while (left < right - 1) {
+            int mid = left + (right - left) / 2;
+            
+            if (array[mid] == target) {
+                return mid;
+            } else if (array[mid] > target) {
+                right = mid;
+            } else {
+                left = mid;
+            }
+        }
+        
+        if (target - array[left] >= array[right] - target) {
+            return right;
+        }
+        if (target - array[left] < array[right] - target) {
+            return left;
+        }
+        
+        return -1;
+    }
+}
+```
+
+
+
+|               Time Complexity               | Space Complexity |
+| :-----------------------------------------: | :--------------: |
+|                   O(logn)                   |       O(1)       |
+| each iteration, traversing half of elements |                  |
+
+
+
+|   次数   |                       错误                       |                  解决方法                  | 注意 |
+| :------: | :----------------------------------------------: | :----------------------------------------: | ---- |
+| 1st time | input: [1],1  没有考虑没进入循环且左右相等的情况 | 多列几个测试用例，当写完代码时，心中过几遍 |      |
+
+
+
+<hr>
+
+## K Closest In Sorted Array
+
+Given a target integer T, a non-negative integer K and an integer array A sorted in ascending order, find the K closest numbers to T in A. If there is a tie, the smaller elements are always preferred.
+
+**Examples**
+
+-   A = {1, 2, 3}, T = 2, K = 3, return {2, 1, 3} or {2, 3, 1}
+-   A = {1, 4, 6, 8}, T = 3, K = 3, return {4, 1, 6}
+
+```java
+/*
+1. Clarification
+input: target, positive Integer K, array sorted in ascending order
+output:
+	K closest number to target
+
+2. Assumption
+	
 3. Result
 4. Test
 */
@@ -393,21 +477,11 @@ output:
 
 
 
-
-
-
-
-
-
-
-
-
-
 ```java
 /*
 1. Clarification
 input:
-output"
+output:
 
 2. Assumption
 3. Result
