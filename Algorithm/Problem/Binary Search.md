@@ -550,11 +550,17 @@ output:
 		
 		
 4. Test(int[] array, int target)
+	// corner case
 	null,2   => return -1
 	[""],2	 => return -1
-	[1],1	 => return -1
-	[2],1	 => return 0
-	[1 2 3],2 => return 2 
+	// case analysis
+									array
+							_____|________|____
+							  r
+	[1,2,3],0 => return 0    	 	 
+	[1,2,3],2 => return 2	 
+	[1 2 3],3 => return -1   
+	[1,2,3]
 */
 ```
 
