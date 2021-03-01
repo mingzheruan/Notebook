@@ -561,6 +561,27 @@ output:
 	[1,2,3],2 => return 2	 		r
 	[1 2 3],3 => return -1   				  r
 */
+
+public Solution {
+    public int smallestElementLargerThanTarget(int[] array, int target) {
+        if (array == null || array.length == 0) {
+            return -1;
+        }
+        
+        int left = 0;
+        int right = array.length - 1;
+        
+        while (left < right - 1) {
+            int mid = left + (right - left) / 2;
+            
+            if (array[mid] >= target) {
+                
+            }
+        }
+        
+        return -1;
+    }
+}
 ```
 
 
