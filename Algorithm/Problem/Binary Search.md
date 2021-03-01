@@ -545,9 +545,9 @@ output:
 3. Result
 	use binary search to find target, and select smallest element that is larger than target
 	recursion rule:
-		(1) if (array[mid] == target)
-		(2)
-		
+		(1) if (array[mid] == target) return mid
+		(2) if ()
+		(3) if ()
 		
 4. Test(int[] array, int target)
 	// corner case
@@ -556,11 +556,10 @@ output:
 	// case analysis
 									array
 							_____|________|____
-							  r
-	[1,2,3],0 => return 0    	 	 
-	[1,2,3],2 => return 2	 
-	[1 2 3],3 => return -1   
-	[1,2,3]
+							  
+	[1,2,3],0 => return 0    r	 	 
+	[1,2,3],2 => return 2	 		r
+	[1 2 3],3 => return -1   				  r
 */
 ```
 
