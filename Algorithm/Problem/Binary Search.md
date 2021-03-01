@@ -534,14 +534,53 @@ A = {1, 2, 2, 2, 3}, T = 1, return 1
 ```java
 /*
 1. Clarification
-input:
+input: target, array sorted in ascending order
 output:
+	(1)  return index 
+	(2)  no index, return -1
 
 2. Assumption
+	There can be duplicate elements in the array.
+
 3. Result
-4. Test
+	use binary search to find target, and select smallest element that is larger than target
+	recursion rule:
+		(1) if (array[mid] == target)
+		(2)
+		
+		
+4. Test(int[] array, int target)
+	null,2   => return -1
+	[""],2	 => return -1
+	[1],1	 => return -1
+	[2],1	 => return 0
+	[1 2 3],2 => return 2 
 */
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
