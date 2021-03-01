@@ -523,9 +523,25 @@ public Solution {
 
 Given a target integer T and an integer array A sorted in ascending order, find the index of the smallest element in A that is larger than T or return -1 if there is no such index.
 
+**Examples**
 
+A = {1, 2, 3}, T = 1, return 1
 
+A = {1, 2, 3}, T = 3, return -1
 
+A = {1, 2, 2, 2, 3}, T = 1, return 1
+
+```java
+/*
+1. Clarification
+input:
+output:
+
+2. Assumption
+3. Result
+4. Test
+*/
+```
 
 
 
