@@ -441,13 +441,72 @@ output:
 	K closest number to target
 
 2. Assumption
+	A is not null
+	K is guranteed to be >= 0 and K is guranteed to be <= A.length
 	
 3. Result
-4. Test
+	use binary search to find target and move the closest elements into array
+	
+4. Test(int[] array, int target, int k)
+	null, ,  => return array
+	[""], ,  => return array
+	[1],2,1  => return [1]
+	[1,2,3,4],2,3 => return[1,2,3]
 */
+
+public Solution {
+    public int[] kClosest(int[] array, int target, int k) {
+        // sanity check
+        if (array == null || array.length == 0) {
+            return array
+        }
+        
+        int left = 0; 
+        int right = array.length - 1;
+        int[] result = new int[k];
+        
+        while (left < right - 1) {
+            int mid = left + (right - left) / 2;
+            
+            if (array[mid] >= target) {
+                right = mid - 1;
+            } else {
+                left = mid + 1;
+            }
+        }
+        
+        int i = 0;
+        while (i < k) {
+            if (target - array[left] >= array[right] - target) {
+                result[i] = array[right];
+                right++;
+            } else if (target - array[left] < array[right] - target) {
+                result[i] = array[left];
+                left--; 
+            }
+            i++;
+        }
+        
+        
+        return new int[0];
+    }
+}
 ```
 
 
+
+
+
+|               Time Complexity               | Space Complexity |
+| :-----------------------------------------: | :--------------: |
+|                   O(logn)                   |       O(1)       |
+| each iteration, traversing half of elements |                  |
+
+
+
+|   次数   |              错误              |                  解决方法                  | 注意 |
+| :------: | :----------------------------: | :----------------------------------------: | ---- |
+| 1st time | 没有考虑当target超出边界的情况 | 多列几个测试用例，当写完代码时，心中过几遍 |      |
 
 
 
