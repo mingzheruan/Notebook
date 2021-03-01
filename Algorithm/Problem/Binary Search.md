@@ -515,13 +515,13 @@ public Solution {
 
 
 
+<hr>
 
 
 
+## Smallest Element Larger than Target
 
-
-
-
+Given a target integer T and an integer array A sorted in ascending order, find the index of the smallest element in A that is larger than T or return -1 if there is no such index.
 
 
 
