@@ -574,8 +574,8 @@ public Solution {
         while (left < right - 1) {
             int mid = left + (right - left) / 2;
             
-            if (array[mid] >= target) {
-                
+            if (array[mid] == target) {
+                break;
             }
         }
         
