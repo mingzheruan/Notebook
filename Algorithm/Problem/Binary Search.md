@@ -83,7 +83,6 @@ public solution {
 <hr>
 
 
-
 ## First Occurrence
 
 Given a target integer T and an integer array A sorted in ascending order, find the index of the first occurrence of T in A or return -1 if there is no such index.
@@ -168,7 +167,6 @@ public Solution {
 
 
 <hr>
-
 ## Last Occurrence
 
 Given a target integer T and an integer array A sorted in ascending order, find the index of the last occurrence of T in A or return -1 if there is no such index.
@@ -339,7 +337,6 @@ public Solution {
 <hr>
 
 
-
 ## Closest In Sorted Array
 
 Given a target integer T and an integer array A sorted in ascending order, find the index i in A such that A[i] is closest to T.
@@ -423,7 +420,6 @@ public Solution {
 
 
 <hr>
-
 ## K Closest In Sorted Array
 
 Given a target integer T, a non-negative integer K and an integer array A sorted in ascending order, find the K closest numbers to T in A. If there is a tie, the smaller elements are always preferred.
@@ -457,38 +453,47 @@ output:
 public Solution {
     public int[] kClosest(int[] array, int target, int k) {
         // sanity check
-        if (array == null || array.length == 0) {
-            return array
+         if (array == null || array.length == 0) {
+            return array;
         }
         
-        int left = 0; 
-        int right = array.length - 1;
+        if (k == 0) {
+            return new int[0];
+        }
+        
+        int left = largestSmallerEqueal(array, target); 
+      	int right = left + 1;
         int[] result = new int[k];
         
+        for (int i = 0; i < k; i++) {
+            if (right >= array.length || left >= 0 && target - array[left] <= array[right] - target) {
+                result[i] = array[left--];
+            } else {
+                result[i] = array[right++];
+            }
+        }
+        return result;
+    }
+    
+    private int largestSmallerEqueal(int[] array, int target) {
+        int left = 0;
+        int right = array.length - 1;
         while (left < right - 1) {
             int mid = left + (right - left) / 2;
-            
-            if (array[mid] >= target) {
-                right = mid - 1;
+            if (array[mid] <= target) {
+                left = mid;
             } else {
-                left = mid + 1;
+                right = mid;
             }
-        }
-        
-        int i = 0;
-        while (i < k) {
-            if (target - array[left] >= array[right] - target) {
-                result[i] = array[right];
-                right++;
-            } else if (target - array[left] < array[right] - target) {
-                result[i] = array[left];
-                left--; 
-            }
-            i++;
-        }
-        
-        
-        return new int[0];
+         } 
+            if (array[left] <= target) {
+                  return left;
+              }
+            if (array[right] <= target) {
+                return right;
+            } 
+           
+            return -1;
     }
 }
 ```
