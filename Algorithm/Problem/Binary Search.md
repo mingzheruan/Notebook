@@ -632,10 +632,33 @@ output:	return index or reture -1
 	(2) dictionary.get(i) will return null(Java)/INT_MIN(C++)/None(Python) if index i is out of bounds
 
 3. Result
-
+	get the length of dictionary and use binary search find target
 
 4. Test
+		
+
 */
+
+public Solution {
+    public int search(Dictionary dictionary, int target) {
+        if (dictionary == null) {
+            return -1;
+        }
+        
+        int left = 0;
+        int right = 1;
+        
+        while (dictionary.get(right) != null && dictionary.get(right) < target) {
+            left = right;
+            right = 2 * right;
+        }
+        return binarySearch (dictionary, target, left, right);
+    }
+    
+    private int bianrySearch
+}
+
+
 ```
 
 
