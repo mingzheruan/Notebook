@@ -544,10 +544,6 @@ output:
 
 3. Result
 	use binary search to find target, and select smallest element that is larger than target
-	recursion rule:
-		(1) if (array[mid] == target) return mid
-		(2) if ()
-		(3) if ()
 		
 4. Test(int[] array, int target)
 	// corner case
@@ -560,6 +556,7 @@ output:
 	[1,2,3],0 => return 0    r	 	 
 	[1,2,3],2 => return 2	 		r
 	[1 2 3],3 => return -1   				  r
+	[1,2,2,3,3,4],2 => return 3
 */
 
 public Solution {
@@ -567,17 +564,33 @@ public Solution {
         if (array == null || array.length == 0) {
             return -1;
         }
-        
+  
+        int result = findTarget(array, target);
+
+        return result;
+    }
+    
+    private int findTarget(int[] array, int target) {
         int left = 0;
         int right = array.length - 1;
         
         while (left < right - 1) {
+            
             int mid = left + (right - left) / 2;
             
-            if (array[mid] == target) {
-                break;
+            if (array[mid] <= target) {
+                left = mid + 1;
+            } else {
+                right = mid;
             }
         }
+        
+        if (array[left] > target) {
+            return left;
+        } 
+        if (array[right] > target) {
+            return right;
+        } 
         
         return -1;
     }
@@ -586,11 +599,44 @@ public Solution {
 
 
 
+|               Time Complexity               | Space Complexity |
+| :-----------------------------------------: | :--------------: |
+|                   O(logn)                   |       O(1)       |
+| each iteration, traversing half of elements |                  |
 
 
 
+<hr>
 
 
+
+## Search In Unknown Sized Sorted Array
+
+Given a integer dictionary A of unknown size, where the numbers in the dictionary are sorted in ascending order, determine if a given target integer T is in the dictionary. Return the index of T in A, return -1 if T is not in A.
+
+**Examples**
+
+-   A = {1, 2, 5, 9, ......}, T = 5, return 2
+-   A = {1, 2, 5, 9, 12, ......}, T = 7, return -1
+
+
+
+```java
+/*
+1. Clarification
+input:	dictionary sorted in ascending order, 	target
+output:	return index or reture -1
+
+2. Assumption
+	(1) dictionary A is not null
+	(2) dictionary.get(i) will return null(Java)/INT_MIN(C++)/None(Python) if index i is out of bounds
+
+3. Result
+
+
+4. Test
+*/
+```
 
 
 
