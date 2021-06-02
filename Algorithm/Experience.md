@@ -7,7 +7,7 @@
 ## Binary Search
 
 1. BinarySearch有两个难点：
-   1. loop中循环的条件，这决定loop将会留有几个元素，但是有可能陷入死循环(使用left < right - 1这个条件不会陷入死循环，但需要后续判断两个元素的值；如果是left <= right 注意可能陷入死循环)
+   1. loop中循环的条件不仅决定loop将会留有几个元素，而且有可能导致程序陷入死循环(使用left < right - 1这个条件不会陷入死循环，但需要后续判断两个元素的值；如果是left <= right 注意可能陷入死循环)
    2. 在调整mid与right、left的值时，需要注意是否有可能漏掉重要元素
 
 2. BinarySearch中：
@@ -37,6 +37,14 @@
                 需另外判断这两个元素
 
 <br>
+
+Binary Search 的优劣点：
+
+优点是比较次数少，查找速度快，平均性能好；
+
+缺点是要求待查表为**有序表**，且插入删除困难。
+
+
 
 Principles of Binary Search:
 
