@@ -9,7 +9,8 @@
 1. BinarySearch有两个难点：
    1. loop中循环的条件不仅决定loop将会留有几个元素，而且有可能导致程序陷入死循环(使用left < right - 1这个条件不会陷入死循环，但需要后续判断两个元素的值；如果是left <= right 注意可能陷入死循环)
    2. 在调整mid与right、left的值时，需要注意是否有可能漏掉重要元素
-
+   3. mid是否加一减一决定于array[mid]是否可以被排除到搜索空间外
+   
 2. BinarySearch中：
    
    1. 需要想target一定不在哪个区间内，并且排除这部分区域以减少搜索空间
@@ -50,6 +51,16 @@ Principles of Binary Search:
 
 1.  We must guarantee that the search space decreases over time (after each iteration)
 2.  We must guarantee that the target (if exists) cannot be ruled out accidentally, when we change the value of left or right (it is critical to define the rule about how to move the range for search)
+
+**Binary Search题思考流程:**
+
+1.  判断array[mid]是否在搜索空间内
+    1.  如果**在**搜索空间内，那么 mid **不可以** + 1 、 - 1
+    2.  如果**不在**搜索空间内，那么 mid **可以** + 1 、 - 1
+2.  根据1 的结果判断
+    1.  如果mid 可以 + 1 、 - 1，left <= right or left < right - 1 都可以用
+    2.  如果mid 不可以 + 1 、 - 1，left <= right 就不能用，会陷入死循环，必须用 left < right - 1
+3.  所有使用 left < right - 1 都必须考虑 post-processing （即考虑array[left],array[right]元素）
 
 ----------------------
 
