@@ -52,13 +52,13 @@ Principles of Binary Search:
 1.  We must guarantee that the search space decreases over time (after each iteration)
 2.  We must guarantee that the target (if exists) cannot be ruled out accidentally, when we change the value of left or right (it is critical to define the rule about how to move the range for search)
 
-**Binary Search题思考流程:**
+***Binary Search题思考流程:***
 
 1.  判断array[mid]是否在搜索空间内
     1.  如果**在**搜索空间内，那么 mid **不可以** + 1 、 - 1
     2.  如果**不在**搜索空间内，那么 mid **可以** + 1 、 - 1
 2.  根据1 的结果判断
-    1.  如果mid 可以 + 1 、 - 1，left <= right or left < right - 1 都可以用
+    1.  如果mid 可以并且使用 + 1 、 - 1，left <= right or left < right - 1 都可以用
     2.  如果mid 不可以 + 1 、 - 1，left <= right 就不能用，会陷入死循环，必须用 left < right - 1
 3.  所有使用 left < right - 1 都必须考虑 post-processing （即考虑array[left],array[right]元素）
 
