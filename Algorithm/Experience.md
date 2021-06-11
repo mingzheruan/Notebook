@@ -63,6 +63,7 @@ Principles of Binary Search:
     1.  如果mid 可以并且使用 + 1 、 - 1，left <= right or left < right - 1 都可以用
     2.  如果mid 不可以 + 1 、 - 1，left <= right 就不能用，会陷入死循环，必须用 left < right - 1
 3.  所有使用 left < right - 1 都必须考虑 post-processing （即考虑array[left],array[right]元素）
+    +   根据最终所求值的关系，判断 array[left],array[right] 元素和target的大小
 
 Note: 
 
@@ -74,7 +75,7 @@ Note:
     1.  target 在可搜索空间的**左边**
     2.  target 在可搜索空间的**中间**
     3.  target 在可搜索空间的**右边**
-2.  因题而异，然后考虑通过 binary search 得到的返回值和可搜索空间的关系
+2.  因题而异，然后考虑通过 binary search 得到的返回值和可搜索空间的关系继续解题
 
 ----------------------
 
