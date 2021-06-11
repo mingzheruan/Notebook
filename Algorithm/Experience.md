@@ -55,7 +55,7 @@ Principles of Binary Search:
 ***Binary Search题思考流程:***
 
 1.  判断array[mid]是否在搜索空间内
-    1.  如果**在**搜索空间内，那么 mid **不可以** + 1 、 - 1
+    1.  如果**在**搜索空间内（不可以将array[mid] 排除到搜索空间外），那么 mid **不可以** + 1 、 - 1
     2.  如果**不在**搜索空间内，那么 mid **可以** + 1 、 - 1
 2.  根据1 的结果判断
     1.  如果mid 可以并且使用 + 1 、 - 1，left <= right or left < right - 1 都可以用
