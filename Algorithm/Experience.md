@@ -54,6 +54,8 @@ Principles of Binary Search:
 
 ***Binary Search题思考流程:***
 
+**针对找target的步骤:**
+
 1.  判断array[mid]是否在搜索空间内
     1.  如果**在**搜索空间内（不可以将array[mid] 排除到搜索空间外），那么 mid **不可以** + 1 、 - 1
     2.  如果**不在**搜索空间内，那么 mid **可以** + 1 、 - 1
@@ -61,6 +63,18 @@ Principles of Binary Search:
     1.  如果mid 可以并且使用 + 1 、 - 1，left <= right or left < right - 1 都可以用
     2.  如果mid 不可以 + 1 、 - 1，left <= right 就不能用，会陷入死循环，必须用 left < right - 1
 3.  所有使用 left < right - 1 都必须考虑 post-processing （即考虑array[left],array[right]元素）
+
+Note: 
+
++   如果使用 left <= right， 因为只会留下一个元素，所以可以if (array[mid] == target) {return mid}
+
+**针对可搜索空间的判断步骤:**
+
+1.  
+    1.  target 在可搜索空间的**左边**
+    2.  target 在可搜索空间的**中间**
+    3.  target 在可搜索空间的**右边**
+2.  因题而异，然后考虑通过 binary search 得到的返回值和可搜索空间的关系
 
 ----------------------
 
