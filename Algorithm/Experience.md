@@ -197,3 +197,6 @@ Test
 
 当涉及到尾结点，需要仔细考虑NPE问题
 
+
+
+Complete binary tree  可以通过array实现
