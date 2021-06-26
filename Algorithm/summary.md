@@ -91,3 +91,28 @@ j : 右边（包含j）是未搜索区域
 1.  recursion
 2.  一分为二，谁小移谁
 
+
+
+**Delete in BST 步骤:**
+High level:
+
+1.  find target
+2.  delete target	
+
+mid level:
+
+1.  find target
+    1.  当前值比target大， 进入左子树
+    2.  当前值比target小，进入右子树
+    3.  直到找到target，进入delete步骤
+2.  delete target
+    1.  target 没有左子树并且没有右子树，return 右子树（null）
+    2.  target 没有左子树并且有右子树，return 右子树
+    3.  target 有左子树并且没有右子树，return 左子树
+    4.  target 有左子树并且也有右子树，但target的右孩子没有左子树，所以先把target左子树挂到 target 的右孩子的左子树上，return target 的右子树
+    5.  target 的 node 有左子树并且也有右子树，但target的右孩子有左子树，所以先在target的右孩子的左子树上找最小值。
+        1.  当找到最小值时，把最小值的右子树挂到最小值的父亲的左子树上
+        2.  return 最小值，然后
+            1.  最小值的左子树连到target的左子树
+            2.  最小值的右子树连到target的右子树
+            3.  return 当前node
