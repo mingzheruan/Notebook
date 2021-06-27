@@ -202,3 +202,14 @@ Test
 Complete binary tree  可以通过array实现
 
 Java TreeMap/TreeSet 底层运用的是红黑树
+
+BFS1 用的是queue
+
+分层打印，解决同一层上的问题
+
+BFS2 用的是priority queue
+
+找最短距离
+
+找第k小 smallest/largest
+
